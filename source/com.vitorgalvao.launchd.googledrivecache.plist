@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>Label</key>
+        <string>com.vitorgalvao.launchd.googledrivecache</string>
+        <key>ProgramArguments</key>
+        <array>
+                <string>/usr/bin/osascript</string>
+                <string>-e</string>
+                <string>tell application id "com.runningwithcrayons.Alfred" to run trigger "rebuild_cache" in workflow "com.vitorgalvao.alfred.googledrive"</string>
+        </array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>20</integer>
+		<key>Minute</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

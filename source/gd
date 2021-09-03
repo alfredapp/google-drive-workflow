@@ -1,0 +1,34 @@
+#!/usr/bin/ruby
+
+require 'json'
+require 'sqlite3'
+
+Query = ARGV[0].split(' ').map { |w| "%#{w}%" }
+Limit = ENV['result_limit'].to_i <= 0 ? 50 : ENV['result_limit'].to_i
+Cache_file = File.join(ENV['alfred_workflow_cache'], 'cache.db')
+
+unless File.exist?(Cache_file)
+  puts({ items: [{ title: 'Run :gdrebuildcache or :gdlaunchd', subtitle: 'The former will rebuild the cache file once while the latter will rebuild it every day', "valid": false }] }.to_json)
+  exit 0
+end
+
+db = SQLite3::Database.new(Cache_file)
+Results = db.execute("SELECT fullpath FROM main WHERE #{Array.new(Query.length, 'basename LIKE ?').join(' AND ')} ORDER BY accesstime DESC LIMIT ?;", Query, Limit).flatten
+
+Script_filter_items = Results.each_with_object([]) { |path, array|
+  array.push(
+    uid: path,
+    type: 'file',
+    title: File.basename(path),
+    subtitle: path,
+    icon: { path: path, type: 'fileicon' },
+    arg: path
+  )
+}
+
+if Script_filter_items.empty?
+  puts({ items: [{ title: 'Nothing found', subtitle: 'Try searching something else' }] }.to_json)
+  exit 0
+end
+
+puts({ items: Script_filter_items }.to_json)
