@@ -12,7 +12,7 @@ Before your first use, you will have to either run `:gdrebuildcache` or `:gdlaun
 
 The Workflow Environment Variables have defaults which will work for most people. You will only have to mess with them if you have an atypical setup.
 
-* `google_drive_path`: The location of Google Drive on your file system.
+* `google_drive_path`: The location of Google Drive on your file system. Can take multiple paths separated by commas.
 * `ignore_list`: A comma-separated list of keywords to ignore. If any appears in a path, it will not be saved to your cache.
 * `result_limit`: How many entries to show in Alfred.
 

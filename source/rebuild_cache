@@ -4,7 +4,12 @@ require 'json'
 require 'pathname'
 require 'sqlite3'
 
-Gdrive_path = (ENV['google_drive_path'].nil? || ENV['google_drive_path'].empty?) ? Pathname.new('/Volumes/GoogleDrive/My Drive') : Pathname.new(ENV['google_drive_path'])
+Gdrive_paths = if ENV['google_drive_path'].nil? || ENV['google_drive_path'].empty?
+  [Pathname.new('/Volumes/GoogleDrive/My Drive')]
+else
+  ENV['google_drive_path'].split(',').map { |p| Pathname.new(p.strip).expand_path }
+end
+
 Ignores = ENV['ignore_list'].split(',').map(&:strip) rescue []
 Tmp_file = Pathname.new(ENV['alfred_workflow_cache']).join('tmp_db')
 Cache_file = Pathname.new(ENV['alfred_workflow_cache']).join('cache.db')
@@ -13,15 +18,17 @@ Cache_file.dirname.mkpath
 db = SQLite3::Database.new(Tmp_file.to_path)
 db.execute('CREATE TABLE main (fullpath TEXT, basename TINYTEXT, accesstime INTEGER);')
 
-Gdrive_path.glob('**/*').each do |path|
-  next if path.symlink?
-  next if Ignores.any? { |i| path.include?(i) }
+Gdrive_paths.each do |gdrive_path|
+  gdrive_path.glob('**/*').each do |path|
+    next if path.symlink?
+    next if Ignores.any? { |i| path.include?(i) }
 
-  accesstime = path.atime.to_i
-  basename = path.basename.to_path
-  path_string = path.to_path
+    accesstime = path.atime.to_i
+    basename = path.basename.to_path
+    path_string = path.to_path
 
-  db.execute("INSERT INTO main (fullpath, basename, accesstime) VALUES (?, ?, ?);", [path_string, basename, accesstime])
+    db.execute("INSERT INTO main (fullpath, basename, accesstime) VALUES (?, ?, ?);", [path_string, basename, accesstime])
+  end
 end
 
 Tmp_file.rename(Cache_file)
