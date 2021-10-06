@@ -23,11 +23,11 @@ Gdrive_paths.each do |gdrive_path|
     next if path.symlink?
     next if Ignores.any? { |i| path.include?(i) }
 
-    accesstime = path.atime.to_i
+    accesstime = path.atime.to_i rescue next
     basename = path.basename.to_path
     path_string = path.to_path
 
-    db.execute("INSERT INTO main (fullpath, basename, accesstime) VALUES (?, ?, ?);", [path_string, basename, accesstime])
+    db.execute('INSERT INTO main (fullpath, basename, accesstime) VALUES (?, ?, ?);', [path_string, basename, accesstime])
   end
 end
 
