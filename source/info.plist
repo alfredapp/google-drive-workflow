@@ -170,7 +170,7 @@
 readonly remote_info_plist="https://raw.githubusercontent.com/vitorgalvao/alfred-google-drive/master/source/com.vitorgalvao.launchd.googledrivecache.plist"
 readonly workflow_url="vitorgalvao/alfred-google-drive"
 readonly download_type='github_release'
-readonly frequency_check='1'
+readonly frequency_check='4'
 
 # FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
 function abort {
@@ -702,7 +702,7 @@ The Workflow Environment Variables have defaults which will work for most people
 		<string>50</string>
 	</dict>
 	<key>version</key>
-	<string>2021.2</string>
+	<string>2021.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/vitorgalvao/alfred-google-drive</string>
 </dict>
