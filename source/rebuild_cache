@@ -10,6 +10,11 @@ else
   ENV['google_drive_path'].split(',').map { |p| Pathname.new(p.strip).expand_path }
 end
 
+unless Gdrive_paths.all?(&:exist?)
+  print 'PATH_ERROR' # For Alfred's conditional
+  abort 'Google Drive path does not exist!' # For Alfred's debugger
+end
+
 Ignores = ENV['ignore_list'].split(',').map(&:strip) rescue []
 Tmp_file = Pathname.new(ENV['alfred_workflow_cache']).join('tmp_db')
 Cache_file = Pathname.new(ENV['alfred_workflow_cache']).join('cache.db')
