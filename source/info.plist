@@ -33,7 +33,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</string>
+				<string>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -83,6 +83,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>60984788-5E27-4BA1-B6E8-61B9536AB211</key>
 		<array>
 			<dict>
@@ -102,6 +115,31 @@
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
 				<string>Reveal in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -301,6 +339,42 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Google Drive path does not exist!</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Hero</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>path</key>
 				<string></string>
 			</dict>
@@ -375,7 +449,37 @@ fi</string>
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:show_notification}</string>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>PATH_ERROR</string>
+						<key>outputlabel</key>
+						<string>Path not found</string>
+						<key>uid</key>
+						<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:success_notification}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
@@ -383,7 +487,7 @@ fi</string>
 						<key>matchstring</key>
 						<string>true</string>
 						<key>outputlabel</key>
-						<string>Show notification</string>
+						<string>Success notification</string>
 						<key>uid</key>
 						<string>7FA3349A-14B3-4B17-B15F-E35FBE9AB1F2</string>
 					</dict>
@@ -428,7 +532,7 @@ fi</string>
 				<false/>
 				<key>variables</key>
 				<dict>
-					<key>show_notification</key>
+					<key>success_notification</key>
 					<string>true</string>
 				</dict>
 			</dict>
@@ -585,11 +689,13 @@ fi</string>
 	<key>readme</key>
 	<string>An interim Workflow to bridge the gap until (if) Google Drives fixes the situation of files not being indexable by Spotlight (and thus Alfred).
 
-Call `gd` and type to list and filter the contents of your Google Drive.
+Before your first use, run `:gdlaunchd` and wait for the notification. The more files you have, the longer the wait. It can take several minutes to finish building the cache. A macOS launchd agent will be loaded to do it daily (running `:gdlaunchd` again removes it).
 
-Before your first use, you will have to either run `:gdrebuildcache` or `:gdlaunchd`. The former builds a cache of your files on demand; the latter uses a macOS launchd agent to rebuild it every day (run `:gdlaunchd` again to uninstall it).
+To rebuild the cache on demand, do `:gdrebuildcache`.
 
-The Workflow Environment Variables have defaults which will work for most people. You will only have to mess with them if you have an atypical setup.
+When done, call `gd` and type to filter the contents of your Google Drive.
+
+The Workflow Environment Variables have defaults which will work for most. You only have to mess with them if you have an atypical setup.
 
 * `google_drive_path`: The location of Google Drive on your file system. Can take multiple paths separated by commas.
 * `ignore_list`: A comma-separated list of keywords to ignore. If any appears in a path, it will not be saved to your cache.
@@ -645,9 +751,16 @@ The Workflow Environment Variables have defaults which will work for most people
 		<key>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>480</integer>
+			<integer>650</integer>
 			<key>ypos</key>
 			<integer>330</integer>
+		</dict>
+		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>175</integer>
 		</dict>
 		<key>60984788-5E27-4BA1-B6E8-61B9536AB211</key>
 		<dict>
@@ -666,7 +779,7 @@ The Workflow Environment Variables have defaults which will work for most people
 		<key>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>825</integer>
 			<key>ypos</key>
 			<integer>310</integer>
 		</dict>
@@ -676,6 +789,20 @@ The Workflow Environment Variables have defaults which will work for most people
 			<integer>300</integer>
 			<key>ypos</key>
 			<integer>40</integer>
+		</dict>
+		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>330</integer>
+		</dict>
+		<key>E0B04215-9C40-4037-A58A-50F7EBA846FA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>175</integer>
 		</dict>
 		<key>F6493CCD-3831-42FC-9FE5-51EB041DD0F7</key>
 		<dict>
@@ -702,7 +829,7 @@ The Workflow Environment Variables have defaults which will work for most people
 		<string>50</string>
 	</dict>
 	<key>version</key>
-	<string>2021.3</string>
+	<string>2021.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/vitorgalvao/alfred-google-drive</string>
 </dict>
