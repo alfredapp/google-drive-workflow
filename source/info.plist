@@ -184,6 +184,55 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>gd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading cache…</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>gd</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Search Google Drive Streamed Paths</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>60984788-5E27-4BA1-B6E8-61B9536AB211</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -290,51 +339,17 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>gd</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string>Loading cache…</string>
-				<key>script</key>
-				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>gd</string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Search Google Drive Streamed Paths</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
+				<key>soundname</key>
+				<string>Hero</string>
+				<key>systemsound</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.output.playsound</string>
 			<key>uid</key>
-			<string>60984788-5E27-4BA1-B6E8-61B9536AB211</string>
+			<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -354,21 +369,6 @@ fi</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Hero</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -829,7 +829,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<string>50</string>
 	</dict>
 	<key>version</key>
-	<string>2021.4</string>
+	<string>2021.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/vitorgalvao/alfred-google-drive</string>
 </dict>

@@ -1,17 +1,27 @@
 #!/usr/bin/ruby
+# frozen_string_literal: true
 
 require 'json'
 require 'sqlite3'
 
 Query = ARGV[0].split(' ').map { |w| "%#{w}%" }
 Limit = ENV['result_limit'].to_i <= 0 ? 50 : ENV['result_limit'].to_i
+Tmp_file = File.join(ENV['alfred_workflow_cache'], 'tmp_db')
 Cache_file = File.join(ENV['alfred_workflow_cache'], 'cache.db')
 
+# If cache file does not exist
 unless File.exist?(Cache_file)
-  puts({ items: [{ title: 'Run :gdrebuildcache or :gdlaunchd', subtitle: 'The former will rebuild the cache file once while the latter will rebuild it every day', "valid": false }] }.to_json)
+  # If temporary cache exists
+  if File.exist?(Tmp_file)
+    puts({ items: [{ title: 'Cache is being built…', subtitle: 'Please be patient. Depending on how many files you have, it can take a while.', "valid": false }] }.to_json)
+    exit 0
+  end
+
+  puts({ items: [{ title: 'No cache found!', subtitle: 'Run either :gdlaunchd or :gdrebuildcache. Consult the “About this Workflow” section.', "valid": false }] }.to_json)
   exit 0
 end
 
+# Filter paths
 db = SQLite3::Database.new(Cache_file)
 Results = db.execute("SELECT fullpath FROM main WHERE #{Array.new(Query.length, 'basename LIKE ?').join(' AND ')} ORDER BY accesstime DESC LIMIT ?;", Query, Limit).flatten
 
