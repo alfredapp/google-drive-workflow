@@ -21,6 +21,11 @@ Tmp_file = Pathname.new(ENV['alfred_workflow_cache']).join('tmp_db')
 Cache_file = Pathname.new(ENV['alfred_workflow_cache']).join('cache.db')
 Cache_file.dirname.mkpath
 
+if Tmp_file.exist?
+  print 'ONGOING_REBUILD' # For Alfred's conditional
+  abort 'Cache creation already in progress' # For Alfred's debugger
+end
+
 db = SQLite3::Database.new(Tmp_file.to_path)
 db.execute('CREATE TABLE main (fullpath TEXT, basename TINYTEXT, accesstime INTEGER);')
 

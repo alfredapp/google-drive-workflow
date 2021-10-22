@@ -135,7 +135,32 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>F1ECBA85-D16C-49D7-9134-61F773979C25</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>941C5D93-A3AC-4F07-9857-927F428CBEB7</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F1ECBA85-D16C-49D7-9134-61F773979C25</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -401,8 +426,29 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>lastpathcomponent</key>
 				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Cache rebuilding already in progress. Please be patient.</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>F1ECBA85-D16C-49D7-9134-61F773979C25</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
@@ -424,27 +470,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Cache rebuilt</string>
-				<key>title</key>
-				<string>Google Drive</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -461,6 +486,20 @@ fi</string>
 						<key>uid</key>
 						<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>ONGOING_REBUILD</string>
+						<key>outputlabel</key>
+						<string>Ongoing rebuild</string>
+						<key>uid</key>
+						<string>941C5D93-A3AC-4F07-9857-927F428CBEB7</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -469,6 +508,48 @@ fi</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:gdrebuildcache</string>
+				<key>subtext</key>
+				<string>A notification will be shown when done</string>
+				<key>text</key>
+				<string>Rebuild Google Drive cache</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1DF785DD-C488-4DA0-B939-05739F26678C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Cache rebuilt</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -499,27 +580,6 @@ fi</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>:gdrebuildcache</string>
-				<key>subtext</key>
-				<string>A notification will be shown when done</string>
-				<key>text</key>
-				<string>Rebuild Google Drive cache</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>1DF785DD-C488-4DA0-B939-05739F26678C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -753,7 +813,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>650</integer>
 			<key>ypos</key>
-			<integer>330</integer>
+			<integer>475</integer>
 		</dict>
 		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
 		<dict>
@@ -781,7 +841,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>825</integer>
 			<key>ypos</key>
-			<integer>310</integer>
+			<integer>455</integer>
 		</dict>
 		<key>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</key>
 		<dict>
@@ -803,6 +863,13 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<integer>825</integer>
 			<key>ypos</key>
 			<integer>175</integer>
+		</dict>
+		<key>F1ECBA85-D16C-49D7-9134-61F773979C25</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>310</integer>
 		</dict>
 		<key>F6493CCD-3831-42FC-9FE5-51EB041DD0F7</key>
 		<dict>
@@ -828,6 +895,8 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>result_limit</key>
 		<string>50</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>2021.5</string>
 	<key>webaddress</key>
