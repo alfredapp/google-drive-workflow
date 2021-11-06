@@ -27,7 +27,7 @@ if Tmp_file.exist?
 end
 
 db = SQLite3::Database.new(Tmp_file.to_path)
-db.execute('CREATE TABLE main (fullpath TEXT, basename TINYTEXT, accesstime INTEGER);')
+db.execute('CREATE TABLE main (fullpath TEXT, basename TINYTEXT, isdir BOOLEAN, accesstime INTEGER);')
 
 Gdrive_paths.each do |gdrive_path|
   gdrive_path.glob('**/*').each do |path|
@@ -35,10 +35,11 @@ Gdrive_paths.each do |gdrive_path|
     next if Ignores.any? { |i| path.include?(i) }
 
     accesstime = path.atime.to_i rescue next
+    fullpath = path.to_path
     basename = path.basename.to_path
-    path_string = path.to_path
+    isdir = path.directory? ? 1 : 0
 
-    db.execute('INSERT INTO main (fullpath, basename, accesstime) VALUES (?, ?, ?);', [path_string, basename, accesstime])
+    db.execute('INSERT INTO main (fullpath, basename, isdir, accesstime) VALUES (?, ?, ?, ?);', [fullpath, basename, isdir, accesstime])
   end
 end
 

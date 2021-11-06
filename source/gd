@@ -4,7 +4,8 @@
 require 'json'
 require 'sqlite3'
 
-Query = ARGV[0].split(' ').map { |w| "%#{w}%" }
+Dir_only = ARGV[0] == 'dir_only' ? 'isdir = 1 AND' : ''
+Query = ARGV[1].split(' ').map { |w| "%#{w}%" }
 Limit = ENV['result_limit'].to_i <= 0 ? 50 : ENV['result_limit'].to_i
 Tmp_file = File.join(ENV['alfred_workflow_cache'], 'tmp_db')
 Cache_file = File.join(ENV['alfred_workflow_cache'], 'cache.db')
@@ -23,7 +24,7 @@ end
 
 # Filter paths
 db = SQLite3::Database.new(Cache_file)
-Results = db.execute("SELECT fullpath FROM main WHERE #{Array.new(Query.length, 'basename LIKE ?').join(' AND ')} ORDER BY accesstime DESC LIMIT ?;", Query, Limit).flatten
+Results = db.execute("SELECT fullpath FROM main WHERE #{Dir_only} #{Array.new(Query.length, 'basename LIKE ?').join(' AND ')} ORDER BY accesstime DESC LIMIT ?;", Query, Limit).flatten
 
 Script_filter_items = Results.each_with_object([]) { |path, array|
   array.push(

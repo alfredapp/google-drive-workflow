@@ -10,7 +10,7 @@ Before your first use, run `:gdlaunchd` and wait for the notification. The more 
 
 To rebuild the cache on demand, do `:gdrebuildcache`.
 
-When done, call `gd` and type to filter the contents of your Google Drive.
+When done, call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to directories.
 
 The Workflow Environment Variables have defaults which will work for most. You only have to mess with them if you have an atypical setup.
 
