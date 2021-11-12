@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
         <key>Label</key>
-        <string>com.vitorgalvao.launchd.googledrivecache</string>
+        <string>com.alfredapp.launchd.googledrivecache</string>
         <key>ProgramArguments</key>
         <array>
                 <string>/usr/bin/osascript</string>
                 <string>-e</string>
-                <string>tell application id "com.runningwithcrayons.Alfred" to run trigger "rebuild_cache" in workflow "com.vitorgalvao.alfred.googledrive"</string>
+                <string>tell application id "com.runningwithcrayons.Alfred" to run trigger "rebuild_cache" in workflow "com.alfredapp.googledrive"</string>
         </array>
 	<key>RunAtLoad</key>
 	<true/>

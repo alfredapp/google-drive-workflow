@@ -6,6 +6,8 @@
 	<string>com.alfredapp.googledrive</string>
 	<key>connections</key>
 	<dict>
+		<key>09746453-F47E-4846-AB48-1C1C4387E977</key>
+		<array/>
 		<key>1DF785DD-C488-4DA0-B939-05739F26678C</key>
 		<array>
 			<dict>
@@ -83,6 +85,21 @@
 				<false/>
 			</dict>
 		</array>
+		<key>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F6493CCD-3831-42FC-9FE5-51EB041DD0F7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
 		<array>
 			<dict>
@@ -111,6 +128,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A95AA673-095E-464D-9DA3-EE61D606F4B6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -485,6 +515,50 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>PATH_ERROR</string>
+						<key>outputlabel</key>
+						<string>Path not found</string>
+						<key>uid</key>
+						<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>ONGOING_REBUILD</string>
+						<key>outputlabel</key>
+						<string>Ongoing rebuild</string>
+						<key>uid</key>
+						<string>941C5D93-A3AC-4F07-9857-927F428CBEB7</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>triggerid</key>
 				<string>rebuild_cache</string>
 			</dict>
@@ -538,50 +612,6 @@ fi</string>
 			<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<true/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>PATH_ERROR</string>
-						<key>outputlabel</key>
-						<string>Path not found</string>
-						<key>uid</key>
-						<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>ONGOING_REBUILD</string>
-						<key>outputlabel</key>
-						<string>Ongoing rebuild</string>
-						<key>uid</key>
-						<string>941C5D93-A3AC-4F07-9857-927F428CBEB7</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -683,15 +713,15 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>readonly agent_id='com.vitorgalvao.launchd.googledrivecache'
+				<string>readonly agent_id='com.alfredapp.launchd.googledrivecache'
 readonly plist_file="${agent_id}.plist"
 readonly launchagents_dir="${HOME}/Library/LaunchAgents"
 readonly installed_plist_file="${launchagents_dir}/${plist_file}"
-[[ -d "${launchagents_dir}" ]] || mkdir -p "${launchagents_dir}"
 
 readonly action="${1}"
 
 function install_agent {
+  mkdir -p "${launchagents_dir}"
   cp "${plist_file}" "${installed_plist_file}"
 
   # Set correct directory to watch
@@ -701,9 +731,6 @@ function install_agent {
   sed -i '' "s|DOWNLOADS_DIR|${expanded_dir}|" "${installed_plist_file}"
 
   launchctl bootstrap "gui/$(id -u "${USER}")" "${installed_plist_file}"
-
-  # Create cache file
-  launchctl kickstart "gui/$(id -u "${USER}")/${agent_id}"
 }
 
 function uninstall_agent {
@@ -716,6 +743,7 @@ function uninstall_agent {
 
 if [[ "${action}" == 'install' ]]; then
   install_agent
+  echo -n 'BUILD_CACHE'
 else
   uninstall_agent
 fi</string>
@@ -761,28 +789,28 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>Please wait…</string>
 				<key>script</key>
-				<string>plist_file="${HOME}/Library/LaunchAgents/com.vitorgalvao.launchd.googledrivecache.plist"
+				<string>plist_file="${HOME}/Library/LaunchAgents/com.alfredapp.launchd.googledrivecache.plist"
 
 if [[ -f "${plist_file}" ]]; then
   echo '
     {"items": [
       {
         "title": "Remove Google Drive launchd service",
-        "subtitle": "Stops saving a cache of added files",
+        "subtitle": "Stops periodically rebuilding the cache",
 	    "arg": "uninstall"
       }
     ]}
   '
 else
-  echo "
-    {\"items\": [
+  echo '
+    {"items": [
       {
-        \"title\": \"Install Google Drive launchd service\",
-        \"subtitle\": \"Save a cache of added files whenever ${google_drive_path} is modified\",
-        \"arg\": \"install\"
+        "title": "Install Google Drive launchd service",
+        "subtitle": "Periodically rebuilds the cache",
+        "arg": "install"
       },
     ]}
-  "
+  '
 fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -807,8 +835,38 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>BUILD_CACHE</string>
+						<key>outputlabel</key>
+						<string>Build cache</string>
+						<key>uid</key>
+						<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>triggerid</key>
-				<string>googledrivelaunchdinstall</string>
+				<string>googledrivelaunchd</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.external</string>
@@ -891,6 +949,13 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>ypos</key>
 			<integer>480</integer>
 		</dict>
+		<key>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</key>
+		<dict>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>620</integer>
+		</dict>
 		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
 		<dict>
 			<key>xpos</key>
@@ -933,7 +998,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>480</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>340</integer>
 		</dict>
 		<key>E0B04215-9C40-4037-A58A-50F7EBA846FA</key>
 		<dict>
@@ -985,7 +1050,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2021.6</string>
+	<string>2021.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
