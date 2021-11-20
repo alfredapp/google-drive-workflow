@@ -20,7 +20,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 
 ## Download
 
-[Get the latest release.](https://github.com/vitorgalvao/alfred-google-drive/releases/latest/download/Google.Drive.alfredworkflow)
+[Get the latest release.](https://github.com/alfredapp/google-drive-workflow/releases/latest/download/Google.Drive.alfredworkflow)
 
 ## License
 
