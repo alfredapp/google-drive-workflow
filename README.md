@@ -24,4 +24,4 @@ The Workflow Environment Variables have defaults which will work for most. You o
 
 ## License
 
-To be determined
+3-Clause BSD
