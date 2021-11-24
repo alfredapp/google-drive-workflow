@@ -21,7 +21,12 @@ Tmp_file = Pathname.new(ENV['alfred_workflow_cache']).join('tmp.db')
 Cache_file = Pathname.new(ENV['alfred_workflow_cache']).join('cache.db')
 Cache_file.dirname.mkpath
 
+# When cache is being built
 if Tmp_file.exist?
+  # Ignore scheduled rebuild if another is in progress
+  exit 0 if ENV['scheduled_run'] == 'true'
+
+  # If here, an unnecessary manual rebuild was triggered
   print 'ONGOING_REBUILD' # For Alfred's conditional
   abort 'Cache creation already in progress' # For Alfred's debugger
 end

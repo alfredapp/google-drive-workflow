@@ -12,7 +12,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F6493CCD-3831-42FC-9FE5-51EB041DD0F7</string>
+				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -79,8 +79,6 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>sourceoutputuid</key>
-				<string>7FA3349A-14B3-4B17-B15F-E35FBE9AB1F2</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -89,7 +87,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F6493CCD-3831-42FC-9FE5-51EB041DD0F7</string>
+				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -117,6 +115,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
@@ -127,7 +135,20 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<string>5AE90DD7-823A-4A56-8A60-20DD017E9D88</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Search in web browser</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>72CFC763-00BD-476E-9200-3B699F931994</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -199,24 +220,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F6493CCD-3831-42FC-9FE5-51EB041DD0F7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>F77467CF-3A8D-44AD-BAA7-A7A2FE64F141</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+				<string>72CFC763-00BD-476E-9200-3B699F931994</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -229,6 +237,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
@@ -239,11 +257,11 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<string>5AE90DD7-823A-4A56-8A60-20DD017E9D88</string>
 				<key>modifiers</key>
-				<integer>0</integer>
+				<integer>131072</integer>
 				<key>modifiersubtext</key>
-				<string></string>
+				<string>Search in web browser</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -305,6 +323,21 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>60984788-5E27-4BA1-B6E8-61B9536AB211</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -415,57 +448,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>soundname</key>
-				<string>Hero</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Google Drive path does not exist!</string>
-				<key>title</key>
-				<string>Google Drive</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -511,6 +493,89 @@ fi</string>
 			<string>FB70CE11-6720-4306-99E3-F55AC3A7A292</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Google Drive path does not exist!</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>readonly encoded="$(perl -MURI::Escape -ne 'chomp; print uri_escape ($_)' &lt;&lt;&lt; "$(basename "${1}")")"
+open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5AE90DD7-823A-4A56-8A60-20DD017E9D88</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Hero</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>rebuild_cache</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -593,25 +658,22 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<true/>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
+				<key>argument</key>
 				<string></string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>rebuild_cache</string>
-				<key>type</key>
-				<integer>8</integer>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>scheduled_run</key>
+					<string>true</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+			<string>72CFC763-00BD-476E-9200-3B699F931994</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -662,7 +724,7 @@ fi</string>
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string>{var:success_notification}</string>
+						<string>{var:scheduled_run}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
@@ -670,13 +732,13 @@ fi</string>
 						<key>matchstring</key>
 						<string>true</string>
 						<key>outputlabel</key>
-						<string>Success notification</string>
+						<string>Scheduled run</string>
 						<key>uid</key>
 						<string>7FA3349A-14B3-4B17-B15F-E35FBE9AB1F2</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>else</string>
+				<string>On-deman run</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -684,82 +746,6 @@ fi</string>
 			<string>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>success_notification</key>
-					<string>true</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>F6493CCD-3831-42FC-9FE5-51EB041DD0F7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>readonly agent_id='com.alfredapp.launchd.googledrivecache'
-readonly plist_file="${agent_id}.plist"
-readonly launchagents_dir="${HOME}/Library/LaunchAgents"
-readonly installed_plist_file="${launchagents_dir}/${plist_file}"
-
-readonly action="${1}"
-
-function install_agent {
-  mkdir -p "${launchagents_dir}"
-  cp "${plist_file}" "${installed_plist_file}"
-
-  # Set correct directory to watch
-  # Current method might not be robust enough
-  # if there are characters in the path which need escaping
-  readonly expanded_dir="${google_drive_path/#\~/${HOME}}"
-  sed -i '' "s|DOWNLOADS_DIR|${expanded_dir}|" "${installed_plist_file}"
-
-  launchctl bootstrap "gui/$(id -u "${USER}")" "${installed_plist_file}"
-}
-
-function uninstall_agent {
-  launchctl bootout "gui/$(id -u "${USER}")" "${installed_plist_file}"
-  rm "${installed_plist_file}"
-
-  # Remove cache directory
-  rm -rf "${alfred_workflow_cache}"
-}
-
-if [[ "${action}" == 'install' ]]; then
-  install_agent
-  echo -n 'BUILD_CACHE'
-else
-  uninstall_agent
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -835,6 +821,55 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>readonly agent_id='com.alfredapp.launchd.googledrivecache'
+readonly plist_file="${agent_id}.plist"
+readonly launchagents_dir="${HOME}/Library/LaunchAgents"
+readonly installed_plist_file="${launchagents_dir}/${plist_file}"
+
+readonly action="${1}"
+
+function install_agent {
+  mkdir -p "${launchagents_dir}"
+  cp "${plist_file}" "${installed_plist_file}"
+  launchctl bootstrap "gui/$(id -u "${USER}")" "${installed_plist_file}"
+}
+
+function uninstall_agent {
+  launchctl bootout "gui/$(id -u "${USER}")" "${installed_plist_file}"
+  rm "${installed_plist_file}"
+
+  # Remove cache directory
+  rm -rf "${alfred_workflow_cache}"
+}
+
+if [[ "${action}" == 'install' ]]; then
+  install_agent
+  echo -n 'BUILD_CACHE'
+else
+  uninstall_agent
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -879,11 +914,11 @@ fi</string>
 	<key>readme</key>
 	<string>An interim Workflow to bridge the gap until (if) Google Drives fixes the situation of files not being indexable by Spotlight (and thus Alfred).
 
-Before your first use, run `:gdlaunchd` and wait for the notification. The more files you have, the longer the wait. It can take several minutes to finish building the cache. A macOS launchd agent will be loaded to do it daily (running `:gdlaunchd` again removes it).
+Before your first use, run `:gdlaunchd` and wait for the notification. The more files you have, the longer the wait. It can take several minutes to finish building the cache. A macOS launchd agent will be loaded to do it daily and on boot (running `:gdlaunchd` again removes it).
 
 To rebuild the cache on demand, do `:gdrebuildcache`.
 
-When done, call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to directories.
+When done, call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to directories. Use ↵ to open the path, ⌥↵ to reveal it in the Finder, or ⇧↵ to search it in the web browser.
 
 The Workflow Environment Variables have defaults which will work for most. You only have to mess with them if you have an atypical setup.
 
@@ -897,7 +932,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>190</integer>
 		</dict>
 		<key>0A8D830A-3042-43A3-B238-6E224D43076E</key>
 		<dict>
@@ -917,14 +952,14 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
-			<integer>460</integer>
+			<integer>605</integer>
 		</dict>
 		<key>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<integer>340</integer>
+			<integer>485</integer>
 		</dict>
 		<key>25EA8955-1D01-4516-BA9E-C57FFFCDA782</key>
 		<dict>
@@ -933,35 +968,42 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>765</integer>
 		</dict>
 		<key>454ADBA2-2A44-4CAD-9365-D1AAEFDB64AC</key>
 		<dict>
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
-			<integer>780</integer>
+			<integer>925</integer>
 		</dict>
 		<key>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</key>
 		<dict>
 			<key>xpos</key>
 			<integer>650</integer>
 			<key>ypos</key>
-			<integer>480</integer>
+			<integer>625</integer>
 		</dict>
 		<key>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</key>
 		<dict>
 			<key>xpos</key>
 			<integer>480</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>765</integer>
 		</dict>
 		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
 		<dict>
 			<key>xpos</key>
 			<integer>650</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>335</integer>
+		</dict>
+		<key>5AE90DD7-823A-4A56-8A60-20DD017E9D88</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>335</integer>
 		</dict>
 		<key>60984788-5E27-4BA1-B6E8-61B9536AB211</key>
 		<dict>
@@ -972,61 +1014,61 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
+		<key>72CFC763-00BD-476E-9200-3B699F931994</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>515</integer>
+		</dict>
 		<key>A95AA673-095E-464D-9DA3-EE61D606F4B6</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<integer>620</integer>
+			<integer>765</integer>
 		</dict>
 		<key>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</key>
 		<dict>
 			<key>xpos</key>
 			<integer>825</integer>
 			<key>ypos</key>
-			<integer>460</integer>
+			<integer>605</integer>
 		</dict>
 		<key>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>40</integer>
 		</dict>
 		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
 		<dict>
 			<key>xpos</key>
 			<integer>480</integer>
 			<key>ypos</key>
-			<integer>340</integer>
+			<integer>485</integer>
 		</dict>
 		<key>E0B04215-9C40-4037-A58A-50F7EBA846FA</key>
 		<dict>
 			<key>xpos</key>
 			<integer>825</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>335</integer>
 		</dict>
 		<key>F1ECBA85-D16C-49D7-9134-61F773979C25</key>
 		<dict>
 			<key>xpos</key>
 			<integer>650</integer>
 			<key>ypos</key>
-			<integer>340</integer>
-		</dict>
-		<key>F6493CCD-3831-42FC-9FE5-51EB041DD0F7</key>
-		<dict>
-			<key>xpos</key>
-			<integer>220</integer>
-			<key>ypos</key>
-			<integer>490</integer>
+			<integer>485</integer>
 		</dict>
 		<key>F77467CF-3A8D-44AD-BAA7-A7A2FE64F141</key>
 		<dict>
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
-			<integer>340</integer>
+			<integer>485</integer>
 		</dict>
 		<key>FB70CE11-6720-4306-99E3-F55AC3A7A292</key>
 		<dict>
@@ -1050,7 +1092,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2021.7</string>
+	<string>2021.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
