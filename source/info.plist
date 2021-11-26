@@ -115,16 +115,6 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
@@ -135,11 +125,21 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>5AE90DD7-823A-4A56-8A60-20DD017E9D88</string>
 				<key>modifiers</key>
 				<integer>131072</integer>
 				<key>modifiersubtext</key>
-				<string>Search in web browser</string>
+				<string>Search on Google Drive online</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -237,16 +237,6 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
@@ -257,11 +247,21 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>5AE90DD7-823A-4A56-8A60-20DD017E9D88</string>
 				<key>modifiers</key>
 				<integer>131072</integer>
 				<key>modifiersubtext</key>
-				<string>Search in web browser</string>
+				<string>Search on Google Drive online</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -329,17 +329,15 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
+				<key>path</key>
 				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
+			<string>alfred.workflow.action.revealfile</string>
 			<key>uid</key>
-			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+			<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
 			<key>version</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -435,19 +433,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -491,6 +476,21 @@ fi</string>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>FB70CE11-6720-4306-99E3-F55AC3A7A292</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -551,6 +551,27 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 			<string>alfred.workflow.output.playsound</string>
 			<key>uid</key>
 			<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Cache rebuilding already in progress. Please be patient.</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>F1ECBA85-D16C-49D7-9134-61F773979C25</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -637,27 +658,6 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Cache rebuilding already in progress. Please be patient.</string>
-				<key>title</key>
-				<string>Google Drive</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>F1ECBA85-D16C-49D7-9134-61F773979C25</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -672,27 +672,6 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>72CFC763-00BD-476E-9200-3B699F931994</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Cache rebuilt</string>
-				<key>title</key>
-				<string>Google Drive</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -714,6 +693,27 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>1DF785DD-C488-4DA0-B939-05739F26678C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Cache rebuilt</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -916,9 +916,15 @@ fi</string>
 
 Before your first use, run `:gdlaunchd` and wait for the notification. The more files you have, the longer the wait. It can take several minutes to finish building the cache. A macOS launchd agent will be loaded to do it daily and on boot (running `:gdlaunchd` again removes it).
 
+![](https://i.imgur.com/oLz8iB3.png)
+
 To rebuild the cache on demand, do `:gdrebuildcache`.
 
-When done, call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to directories. Use ↵ to open the path, ⌥↵ to reveal it in the Finder, or ⇧↵ to search it in the web browser.
+When done, call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to directories.
+
+![](https://i.imgur.com/yuv4rEy.png)
+
+![](https://i.imgur.com/5hNOPzs.png)
 
 The Workflow Environment Variables have defaults which will work for most. You only have to mess with them if you have an atypical setup.
 
@@ -932,7 +938,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>40</integer>
 		</dict>
 		<key>0A8D830A-3042-43A3-B238-6E224D43076E</key>
 		<dict>
@@ -1040,7 +1046,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>190</integer>
 		</dict>
 		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
 		<dict>
@@ -1089,10 +1095,8 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>result_limit</key>
 		<string>50</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>2021.9</string>
+	<string>2021.10</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
