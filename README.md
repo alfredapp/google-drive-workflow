@@ -1,4 +1,5 @@
-# Alfred Workflow for Google Drive
+# <img src='source/icon.png' width='45' align='center' alt='icon'> Google Drive Alfred Workflow
+
 
 List File Stream contents from Google Drive
 
