@@ -1095,8 +1095,10 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>result_limit</key>
 		<string>50</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2021.10</string>
+	<string>2021.11</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
