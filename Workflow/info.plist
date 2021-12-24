@@ -348,7 +348,7 @@
 				<integer>0</integer>
 				<key>script</key>
 				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist="https://raw.githubusercontent.com/alfredapp/google-drive-workflow/master/source/info.plist"
+readonly remote_info_plist="https://raw.githubusercontent.com/alfredapp/google-drive-workflow/master/Workflow/info.plist"
 readonly workflow_url="alfredapp/google-drive-workflow"
 readonly download_type='github_release'
 readonly frequency_check='4'
@@ -1095,10 +1095,8 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>result_limit</key>
 		<string>50</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>2021.11</string>
+	<string>2021.12</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
