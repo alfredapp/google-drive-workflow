@@ -39,7 +39,7 @@ Gdrive_paths.each do |gdrive_path|
     next if path.symlink?
     next if Ignores.any? { |i| path.include?(i) }
 
-    accesstime = path.atime.to_i rescue next
+    accesstime = path.atime.to_i rescue Time.new(1970).to_i
     fullpath = path.to_path
     basename = path.basename.to_path
     isdir = path.directory? ? 1 : 0
