@@ -17,6 +17,7 @@ unless Gdrive_paths.all?(&:exist?)
 end
 
 Ignores = ENV['ignore_list'].split(',').map(&:strip) rescue []
+Paths_file = Pathname.new(ENV['alfred_workflow_cache']).join('tmp.txt')
 Tmp_file = Pathname.new(ENV['alfred_workflow_cache']).join('tmp.db')
 Cache_file = Pathname.new(ENV['alfred_workflow_cache']).join('cache.db')
 Cache_file.dirname.mkpath
@@ -35,7 +36,13 @@ db = SQLite3::Database.new(Tmp_file.to_path)
 db.execute('CREATE TABLE main (fullpath TEXT, basename TINYTEXT, isdir BOOLEAN, accesstime INTEGER);')
 
 Gdrive_paths.each do |gdrive_path|
-  gdrive_path.glob('**/*').each do |path|
+  # Use system `find` utility instead of Ruby glob for stability and speed
+  cmd = "find '#{gdrive_path.to_path}' -mindepth 1 > '#{Paths_file.to_path}'"
+  cmd_result = system( cmd )
+  abort 'Path traversal did not succeed' if not cmd_result
+  
+  File.open(Paths_file.to_path, 'r').each do |line|
+    path = Pathname.new(line)
     next if path.symlink?
     next if Ignores.any? { |i| path.include?(i) }
 
@@ -49,3 +56,4 @@ Gdrive_paths.each do |gdrive_path|
 end
 
 Tmp_file.rename(Cache_file)
+File.delete(Paths_file) if File.exist?(Paths_file)
