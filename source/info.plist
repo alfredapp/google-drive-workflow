@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.googledrive</string>
+	<key>connections</key>
+	<dict>
+		<key>09746453-F47E-4846-AB48-1C1C4387E977</key>
+		<array/>
+		<key>1DF785DD-C488-4DA0-B939-05739F26678C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A8D830A-3042-43A3-B238-6E224D43076E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>25EA8955-1D01-4516-BA9E-C57FFFCDA782</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>454ADBA2-2A44-4CAD-9365-D1AAEFDB64AC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>60984788-5E27-4BA1-B6E8-61B9536AB211</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5AE90DD7-823A-4A56-8A60-20DD017E9D88</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Search on Google Drive online</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>72CFC763-00BD-476E-9200-3B699F931994</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A95AA673-095E-464D-9DA3-EE61D606F4B6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1ECBA85-D16C-49D7-9134-61F773979C25</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>941C5D93-A3AC-4F07-9857-927F428CBEB7</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F1ECBA85-D16C-49D7-9134-61F773979C25</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F77467CF-3A8D-44AD-BAA7-A7A2FE64F141</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>72CFC763-00BD-476E-9200-3B699F931994</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FB70CE11-6720-4306-99E3-F55AC3A7A292</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Reveal in Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5AE90DD7-823A-4A56-8A60-20DD017E9D88</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Search on Google Drive online</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Vítor Galvão</string>
+	<key>description</key>
+	<string>List File Stream contents from Google Drive</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Google Drive</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>gd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading cache…</string>
+				<key>script</key>
+				<string>./gd 'all' "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>gd</string>
+				<key>subtext</key>
+				<string>All path types</string>
+				<key>title</key>
+				<string>Search Google Drive</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>60984788-5E27-4BA1-B6E8-61B9536AB211</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
+readonly remote_info_plist="https://raw.githubusercontent.com/alfredapp/google-drive-workflow/master/Workflow/info.plist"
+readonly workflow_url="alfredapp/google-drive-workflow"
+readonly download_type='github_release'
+readonly frequency_check='4'
+
+# FROM HERE ON, CODE SHOULD BE LEFT UNTOUCHED!
+function abort {
+  echo "${1}" &gt;&amp;2
+  exit 1
+}
+
+function url_exists {
+  curl --silent --location --output /dev/null --fail --range 0-0 "${1}"
+}
+
+function notification {
+  local -r notificator="$(find . -type d -name 'Notificator.app')"
+  if [[ -n "${notificator}" ]]; then
+    "${notificator}/Contents/Resources/Scripts/notificator" --message "${1}" --title "${alfred_workflow_name}" --subtitle 'A new version is available'
+    return
+  fi
+
+  local -r terminal_notifier="$(find . -type f -name 'terminal-notifier')"
+  if [[ -n "${terminal_notifier}" ]]; then
+    "${terminal_notifier}" -title "${alfred_workflow_name}" -subtitle 'A new version is available' -message "${1}"
+    return
+  fi
+
+  osascript -e "display notification \"${1}\" with title \"${alfred_workflow_name}\" subtitle \"A new version is available\""
+}
+
+# Local sanity checks
+readonly local_info_plist='info.plist'
+readonly local_version="$(/usr/libexec/PlistBuddy -c 'print version' "${local_info_plist}")"
+
+[[ -n "${local_version}" ]] || abort 'You need to set a workflow version in the configuration sheet.'
+[[ "${download_type}" =~ ^(direct|page|github_release)$ ]] || abort "'download_type' (${download_type}) needs to be one of 'direct', 'page', or 'github_release'."
+[[ "${frequency_check}" =~ ^[0-9]+$ ]] || abort "'frequency_check' (${frequency_check}) needs to be a number."
+
+# Check for updates
+if [[ $(find "${local_info_plist}" -mtime +"${frequency_check}"d) ]]; then
+  if ! url_exists "${remote_info_plist}"; then abort "'remote_info_plist' (${remote_info_plist}) appears to not be reachable."; fi # Remote sanity check
+
+  readonly tmp_file="$(mktemp)"
+  curl --silent --location --output "${tmp_file}" "${remote_info_plist}"
+  readonly remote_version="$(/usr/libexec/PlistBuddy -c 'print version' "${tmp_file}")"
+
+  if [[ "${local_version}" == "${remote_version}" ]]; then
+    touch "${local_info_plist}" # Reset timer by touching local file
+    exit 0
+  fi
+
+  if [[ "${download_type}" == 'page' ]]; then
+    notification 'Opening download page…'
+    open "${workflow_url}"
+    exit 0
+  fi
+
+  download_url="$([[ "${download_type}" == 'github_release' ]] &amp;&amp; curl --silent "https://api.github.com/repos/${workflow_url}/releases/latest" | grep 'browser_download_url' | head -1 | sed -E 's/.*browser_download_url": "(.*)"/\1/' || echo "${workflow_url}")"
+
+  if url_exists "${download_url}"; then
+    notification 'Downloading and installing…'
+    curl --silent --location --output "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow" "${download_url}"
+    open "${HOME}/Downloads/${alfred_workflow_name}.alfredworkflow"
+  else
+    abort "'workflow_url' (${download_url}) appears to not be reachable."
+  fi
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0A8D830A-3042-43A3-B238-6E224D43076E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>gdf</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Loading cache…</string>
+				<key>script</key>
+				<string>./gd 'dir_only' "${1}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>gd</string>
+				<key>subtext</key>
+				<string>Directories only</string>
+				<key>title</key>
+				<string>Search Google Drive Directories</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FB70CE11-6720-4306-99E3-F55AC3A7A292</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Google Drive path does not exist!</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>readonly encoded="$(perl -MURI::Escape -ne 'chomp; print uri_escape ($_)' &lt;&lt;&lt; "$(basename "${1}")")"
+open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5AE90DD7-823A-4A56-8A60-20DD017E9D88</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>soundname</key>
+				<string>Hero</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Cache rebuilding already in progress. Please be patient.</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>F1ECBA85-D16C-49D7-9134-61F773979C25</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>rebuild_cache</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>PATH_ERROR</string>
+						<key>outputlabel</key>
+						<string>Path not found</string>
+						<key>uid</key>
+						<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>ONGOING_REBUILD</string>
+						<key>outputlabel</key>
+						<string>Ongoing rebuild</string>
+						<key>uid</key>
+						<string>941C5D93-A3AC-4F07-9857-927F428CBEB7</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>rebuild_cache</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>F77467CF-3A8D-44AD-BAA7-A7A2FE64F141</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>scheduled_run</key>
+					<string>true</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>72CFC763-00BD-476E-9200-3B699F931994</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>:gdrebuildcache</string>
+				<key>subtext</key>
+				<string>A notification will be shown when done</string>
+				<key>text</key>
+				<string>Rebuild Google Drive cache</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1DF785DD-C488-4DA0-B939-05739F26678C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Cache rebuilt</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:scheduled_run}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>true</string>
+						<key>outputlabel</key>
+						<string>Scheduled run</string>
+						<key>uid</key>
+						<string>7FA3349A-14B3-4B17-B15F-E35FBE9AB1F2</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>On-deman run</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>:gdlaunchd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please wait…</string>
+				<key>script</key>
+				<string>plist_file="${HOME}/Library/LaunchAgents/com.alfredapp.launchd.googledrivecache.plist"
+
+if [[ -f "${plist_file}" ]]; then
+  echo '
+    {"items": [
+      {
+        "title": "Remove Google Drive launchd service",
+        "subtitle": "Stops periodically rebuilding the cache",
+	    "arg": "uninstall"
+      }
+    ]}
+  '
+else
+  echo '
+    {"items": [
+      {
+        "title": "Install Google Drive launchd service",
+        "subtitle": "Periodically rebuilds the cache",
+        "arg": "install"
+      },
+    ]}
+  '
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Install/remove Google Drive cache launchd agent</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>25EA8955-1D01-4516-BA9E-C57FFFCDA782</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>readonly agent_id='com.alfredapp.launchd.googledrivecache'
+readonly plist_file="${agent_id}.plist"
+readonly launchagents_dir="${HOME}/Library/LaunchAgents"
+readonly installed_plist_file="${launchagents_dir}/${plist_file}"
+
+readonly action="${1}"
+
+function install_agent {
+  mkdir -p "${launchagents_dir}"
+  cp "${plist_file}" "${installed_plist_file}"
+  launchctl bootstrap "gui/$(id -u "${USER}")" "${installed_plist_file}"
+}
+
+function uninstall_agent {
+  launchctl bootout "gui/$(id -u "${USER}")" "${installed_plist_file}"
+  rm "${installed_plist_file}"
+
+  # Remove cache directory
+  rm -rf "${alfred_workflow_cache}"
+}
+
+if [[ "${action}" == 'install' ]]; then
+  install_agent
+  echo -n 'BUILD_CACHE'
+else
+  uninstall_agent
+fi</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>BUILD_CACHE</string>
+						<key>outputlabel</key>
+						<string>Build cache</string>
+						<key>uid</key>
+						<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>googledrivelaunchd</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>454ADBA2-2A44-4CAD-9365-D1AAEFDB64AC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>An interim Workflow to bridge the gap until (if) Google Drives fixes the situation of files not being indexable by Spotlight (and thus Alfred).
+
+Before your first use, run `:gdlaunchd` and wait for the notification. The more files you have, the longer the wait. It can take several minutes to finish building the cache. A macOS launchd agent will be loaded to do it daily and on boot (running `:gdlaunchd` again removes it).
+
+![](https://i.imgur.com/oLz8iB3.png)
+
+To rebuild the cache on demand, do `:gdrebuildcache`.
+
+When done, call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to directories.
+
+![](https://i.imgur.com/yuv4rEy.png)
+
+![](https://i.imgur.com/5hNOPzs.png)
+
+The Workflow Environment Variables have defaults which will work for most. You only have to mess with them if you have an atypical setup.
+
+* `google_drive_path`: The location of Google Drive on your file system. Can take multiple paths separated by commas.
+* `ignore_list`: A comma-separated list of keywords to ignore. If any appears in a path, it will not be saved to your cache.
+* `result_limit`: How many entries to show in Alfred.</string>
+	<key>uidata</key>
+	<dict>
+		<key>09746453-F47E-4846-AB48-1C1C4387E977</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>0A8D830A-3042-43A3-B238-6E224D43076E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>OneUpdater</string>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>1DF785DD-C488-4DA0-B939-05739F26678C</key>
+		<dict>
+			<key>note</key>
+			<string>Rebuild cache on demand</string>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>605</integer>
+		</dict>
+		<key>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>485</integer>
+		</dict>
+		<key>25EA8955-1D01-4516-BA9E-C57FFFCDA782</key>
+		<dict>
+			<key>note</key>
+			<string>Load agent to rebuild cache daily</string>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>765</integer>
+		</dict>
+		<key>454ADBA2-2A44-4CAD-9365-D1AAEFDB64AC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>925</integer>
+		</dict>
+		<key>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>625</integer>
+		</dict>
+		<key>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</key>
+		<dict>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>765</integer>
+		</dict>
+		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>335</integer>
+		</dict>
+		<key>5AE90DD7-823A-4A56-8A60-20DD017E9D88</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>335</integer>
+		</dict>
+		<key>60984788-5E27-4BA1-B6E8-61B9536AB211</key>
+		<dict>
+			<key>note</key>
+			<string>Search all path types</string>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>72CFC763-00BD-476E-9200-3B699F931994</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>515</integer>
+		</dict>
+		<key>A95AA673-095E-464D-9DA3-EE61D606F4B6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>765</integer>
+		</dict>
+		<key>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>605</integer>
+		</dict>
+		<key>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>190</integer>
+		</dict>
+		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>485</integer>
+		</dict>
+		<key>E0B04215-9C40-4037-A58A-50F7EBA846FA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>335</integer>
+		</dict>
+		<key>F1ECBA85-D16C-49D7-9134-61F773979C25</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>485</integer>
+		</dict>
+		<key>F77467CF-3A8D-44AD-BAA7-A7A2FE64F141</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>485</integer>
+		</dict>
+		<key>FB70CE11-6720-4306-99E3-F55AC3A7A292</key>
+		<dict>
+			<key>note</key>
+			<string>Search directories only</string>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>190</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>google_drive_path</key>
+		<string>/Volumes/GoogleDrive/My Drive</string>
+		<key>ignore_list</key>
+		<string></string>
+		<key>result_limit</key>
+		<string>50</string>
+	</dict>
+	<key>version</key>
+	<string>2022.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/alfredapp/google-drive-workflow/</string>
+</dict>
+</plist>
