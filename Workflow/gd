@@ -12,8 +12,10 @@ Cache_file = File.join(ENV['alfred_workflow_cache'], 'cache.db')
 
 # If cache file does not exist
 unless File.exist?(Cache_file)
-  # If temporary cache exists
-  if File.exist?(Tmp_file)
+  # If cache is being built
+  require 'open3'
+
+  if Open3.capture2('ps', 'A').first.split("\n").any? { |l| l.match(/[r]uby.*Alfred.*rebuild_cache/) }
     puts({ items: [{ title: 'Cache is being built…', subtitle: 'Please be patient. Depending on how many files you have, it can take a while.', "valid": false }] }.to_json)
     exit 0
   end
