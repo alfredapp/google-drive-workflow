@@ -15,7 +15,7 @@ unless File.exist?(Cache_file)
   # If cache is being built
   require 'open3'
 
-  if Open3.capture2('ps', 'A').first.split("\n").any? { |l| l.match(/[r]uby.*Alfred.*rebuild_cache/) }
+  if Open3.capture2('ps', 'A').first.split("\n").any? { |l| l.match(/ruby.*Alfred.*rebuild_cache/) }
     puts({ items: [{ title: 'Cache is being built…', subtitle: 'Please be patient. Depending on how many files you have, it can take a while.', "valid": false }] }.to_json)
     exit 0
   end

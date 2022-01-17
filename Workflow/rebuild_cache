@@ -23,7 +23,9 @@ Cache_file = Pathname.new(ENV['alfred_workflow_cache']).join('cache.db')
 Cache_file.dirname.mkpath
 
 # If cache is being built
-if Open3.capture2('ps', 'A').first.split("\n").any? { |l| l.match(/[r]uby.*Alfred.*rebuild_cache/) }
+if Open3.capture2('ps', 'A').first.split("\n")
+    .reject { |l| l.start_with?(Process.pid.to_s) } # Ignore self
+    .any? { |l| l.match(/ruby.*Alfred.*rebuild_cache/) }
   # Ignore scheduled rebuild if another rebuild is in progress
   exit 0 if ENV['scheduled_run'] == 'true'
 

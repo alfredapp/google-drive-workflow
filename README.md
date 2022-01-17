@@ -24,6 +24,8 @@ The Workflow Environment Variables have defaults which will work for most. You o
 * `ignore_list`: A comma-separated list of keywords to ignore. If any appears in a path, it will not be saved to your cache.
 * `result_limit`: How many entries to show in Alfred.
 
+`!gddiagnostic` inspects the current Workflow configuration. It is to be run when asking for help.
+
 ## Download
 
 [Get the latest release.](https://github.com/alfredapp/google-drive-workflow/releases/latest/download/Google.Drive.alfredworkflow)

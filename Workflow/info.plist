@@ -332,19 +332,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>path</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -390,6 +377,19 @@
 			<string>60984788-5E27-4BA1-B6E8-61B9536AB211</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -609,6 +609,27 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Cache rebuilding already in progress. Please be patient.</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>F1ECBA85-D16C-49D7-9134-61F773979C25</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<true/>
 				<key>escaping</key>
@@ -689,27 +710,6 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Cache rebuilding already in progress. Please be patient.</string>
-				<key>title</key>
-				<string>Google Drive</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>F1ECBA85-D16C-49D7-9134-61F773979C25</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -724,27 +724,6 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>72CFC763-00BD-476E-9200-3B699F931994</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Cache rebuilt</string>
-				<key>title</key>
-				<string>Google Drive</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -766,6 +745,27 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>1DF785DD-C488-4DA0-B939-05739F26678C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Cache rebuilt</string>
+				<key>title</key>
+				<string>Google Drive</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1161,7 +1161,9 @@ The Workflow Environment Variables have defaults which will work for most. You o
 
 * `google_drive_path`: The location of Google Drive on your file system. Can take multiple paths separated by commas.
 * `ignore_list`: A comma-separated list of keywords to ignore. If any appears in a path, it will not be saved to your cache.
-* `result_limit`: How many entries to show in Alfred.</string>
+* `result_limit`: How many entries to show in Alfred.
+
+`!gddiagnostic` inspects the current Workflow configuration. It is to be run when asking for help.</string>
 	<key>uidata</key>
 	<dict>
 		<key>09746453-F47E-4846-AB48-1C1C4387E977</key>
@@ -1364,7 +1366,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<string>50</string>
 	</dict>
 	<key>version</key>
-	<string>2022.2</string>
+	<string>2022.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
