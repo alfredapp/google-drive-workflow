@@ -1022,13 +1022,19 @@ while IFS= read -r gdrive_path; do
   else
     echo "Does NOT Exist: ${gdrive_path}"
   fi
-done &lt; &lt;(sed 's/,/\n/g' &lt;&lt;&lt; "~/Library, ~/Desktop" | sed 's/ *//' | sed 's/ *$//')
+done &lt; &lt;(sed 's/,/\n/g' &lt;&lt;&lt; "${google_drive_path}" | sed 's/ *//' | sed 's/ *$//')
 
 echo
 echo '### Cache dir'
 
 readonly cache_dir="${HOME}/Library/Caches/com.runningwithcrayons.Alfred/Workflow Data/com.alfredapp.googledrive"
-ls -1 "${cache_dir}"
+readonly cache_files="$(ls -1 "${cache_dir}")"
+
+if [[ -n "${cache_files}" ]]; then
+  echo "${cache_files}"
+else
+  echo 'Files NOT present'
+fi
 
 echo
 echo '### Cache file'
@@ -1366,7 +1372,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<string>50</string>
 	</dict>
 	<key>version</key>
-	<string>2022.3</string>
+	<string>2022.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
