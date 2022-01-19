@@ -21,7 +21,7 @@ When done, call `gd` and type to filter the contents of your Google Drive. `gdf`
 The Workflow Environment Variables have defaults which will work for most. You only have to mess with them if you have an atypical setup.
 
 * `google_drive_path`: The location of Google Drive on your file system. Can take multiple paths separated by commas.
-* `ignore_list`: A comma-separated list of keywords to ignore. If any appears in a path, it will not be saved to your cache.
+* `ignore_list`: A comma-separated list of case-sensitive keywords to ignore. If any appears in a path, it will not be saved to your cache. Wildcard characters are interpreted.
 * `result_limit`: How many entries to show in Alfred.
 
 `!gddiagnostic` inspects the current Workflow configuration. It is to be run when asking for help.
