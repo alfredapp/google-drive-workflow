@@ -12,7 +12,7 @@ Cache_file = File.join(ENV['alfred_workflow_cache'], 'cache.db')
 
 # If cache file does not exist
 unless File.exist?(Cache_file)
-  # If cache is being built
+  # Check if cache is being built
   require 'open3'
 
   if Open3.capture2('ps', 'A').first.split("\n").any? { |l| l.match(/ruby.*Alfred.*rebuild_cache/) }

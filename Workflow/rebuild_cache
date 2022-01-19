@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 require 'json'
-require 'pathname'
 require 'open3'
+require 'pathname'
 require 'sqlite3'
 
 Gdrive_paths = if ENV['google_drive_path'].nil? || ENV['google_drive_path'].empty?
@@ -24,7 +24,7 @@ Cache_file.dirname.mkpath
 
 # If cache is being built
 if Open3.capture2('ps', 'A').first.split("\n")
-    .reject { |l| l.start_with?(Process.pid.to_s) } # Ignore self
+    .reject { |l| l.start_with?(/\s*#{Process.pid}/) } # Ignore self
     .any? { |l| l.match(/ruby.*Alfred.*rebuild_cache/) }
   # Ignore scheduled rebuild if another rebuild is in progress
   exit 0 if ENV['scheduled_run'] == 'true'
