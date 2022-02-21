@@ -7,7 +7,7 @@ require 'pathname'
 require 'sqlite3'
 
 Gdrive_paths = if ENV['google_drive_path'].nil? || ENV['google_drive_path'].empty?
-  [Pathname.new('/Volumes/GoogleDrive/My Drive')]
+  [Pathname.new('/Volumes/GoogleDrive')]
 else
   ENV['google_drive_path'].split(',').map { |p| Pathname.new(p.strip).expand_path }
 end

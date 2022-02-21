@@ -1365,14 +1365,16 @@ The Workflow Environment Variables have defaults which will work for most. You o
 	<key>variables</key>
 	<dict>
 		<key>google_drive_path</key>
-		<string>/Volumes/GoogleDrive/My Drive</string>
+		<string>/Volumes/GoogleDrive</string>
 		<key>ignore_list</key>
 		<string></string>
 		<key>result_limit</key>
 		<string>50</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2022.6</string>
+	<string>2022.7</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
