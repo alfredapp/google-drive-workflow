@@ -41,6 +41,7 @@ db.execute('CREATE TABLE main (fullpath TEXT, basename TINYTEXT, isdir BOOLEAN, 
 
 Gdrive_paths.each do |gdrive_path|
   gdrive_path.find.lazy.each do |path|
+    Find.prune unless path.exist?
     next if path.symlink?
     next if Ignores.any? { |i| path.fnmatch?("*#{i}*") }
 

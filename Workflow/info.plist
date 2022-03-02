@@ -70,19 +70,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>454ADBA2-2A44-4CAD-9365-D1AAEFDB64AC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</key>
 		<array>
 			<dict>
@@ -92,21 +79,6 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -171,10 +143,12 @@
 			</dict>
 		</array>
 		<key>A95AA673-095E-464D-9DA3-EE61D606F4B6</key>
+		<array/>
+		<key>AA7EFB63-A725-4B03-84FF-979F9F06BF8E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</string>
+				<string>72CFC763-00BD-476E-9200-3B699F931994</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -276,7 +250,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>72CFC763-00BD-476E-9200-3B699F931994</string>
+				<string>AA7EFB63-A725-4B03-84FF-979F9F06BF8E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -697,39 +671,6 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>triggerid</key>
-				<string>rebuild_cache</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>F77467CF-3A8D-44AD-BAA7-A7A2FE64F141</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>scheduled_run</key>
-					<string>true</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>72CFC763-00BD-476E-9200-3B699F931994</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -796,6 +737,52 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>rebuild_cache</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>F77467CF-3A8D-44AD-BAA7-A7A2FE64F141</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>10</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>AA7EFB63-A725-4B03-84FF-979F9F06BF8E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>scheduled_run</key>
+					<string>true</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>72CFC763-00BD-476E-9200-3B699F931994</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -901,7 +888,6 @@ function uninstall_agent {
 
 if [[ "${action}" == 'install' ]]; then
   install_agent
-  echo -n 'BUILD_CACHE'
 else
   uninstall_agent
 fi</string>
@@ -912,55 +898,17 @@ fi</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>externalid</key>
+				<string>googledrivelaunchd</string>
+			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<true/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>BUILD_CACHE</string>
-						<key>outputlabel</key>
-						<string>Build cache</string>
-						<key>uid</key>
-						<string>3C498F51-6098-4D9E-A353-5517AB07502C</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>googledrivelaunchd</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>454ADBA2-2A44-4CAD-9365-D1AAEFDB64AC</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -992,7 +940,6 @@ fi</string>
 				<integer>102</integer>
 				<key>script</key>
 				<string>echo '### Workflow version'
-
 /usr/libexec/PlistBuddy -c 'print version' info.plist
 
 echo
@@ -1004,8 +951,11 @@ echo '### macOS version'
 /usr/bin/sw_vers -productVersion
 
 echo
-echo '### Workflow environment variables'
+echo '### Architecture'
+/usr/bin/arch
 
+echo
+echo '### Workflow environment variables'
 /usr/libexec/PlistBuddy -c 'print variables' info.plist
 
 echo
@@ -1175,7 +1125,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>09746453-F47E-4846-AB48-1C1C4387E977</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>390</integer>
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
@@ -1186,7 +1136,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>note</key>
 			<string>OneUpdater</string>
 			<key>xpos</key>
-			<integer>480</integer>
+			<integer>570</integer>
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
@@ -1197,12 +1147,12 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
-			<integer>605</integer>
+			<integer>485</integer>
 		</dict>
 		<key>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>390</integer>
 			<key>ypos</key>
 			<integer>485</integer>
 		</dict>
@@ -1222,40 +1172,26 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
-			<integer>1055</integer>
-		</dict>
-		<key>454ADBA2-2A44-4CAD-9365-D1AAEFDB64AC</key>
-		<dict>
-			<key>xpos</key>
-			<integer>55</integer>
-			<key>ypos</key>
 			<integer>925</integer>
 		</dict>
 		<key>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>625</integer>
-		</dict>
-		<key>51761FEA-80ED-4BA2-9FBD-75C6CFB3AF81</key>
-		<dict>
-			<key>xpos</key>
-			<integer>480</integer>
-			<key>ypos</key>
-			<integer>765</integer>
 		</dict>
 		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>
 		<key>5AE90DD7-823A-4A56-8A60-20DD017E9D88</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>390</integer>
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>
@@ -1271,77 +1207,86 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>72CFC763-00BD-476E-9200-3B699F931994</key>
 		<dict>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>515</integer>
+			<integer>670</integer>
 		</dict>
 		<key>A95AA673-095E-464D-9DA3-EE61D606F4B6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>390</integer>
 			<key>ypos</key>
 			<integer>765</integer>
+		</dict>
+		<key>AA7EFB63-A725-4B03-84FF-979F9F06BF8E</key>
+		<dict>
+			<key>note</key>
+			<string>Give it a few seconds, in case Google Drive path exists but is still being mounted</string>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>670</integer>
 		</dict>
 		<key>ABFED594-72BE-4A91-A791-46EF3A09181C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>740</integer>
 			<key>ypos</key>
-			<integer>1055</integer>
+			<integer>925</integer>
 		</dict>
 		<key>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>825</integer>
+			<integer>915</integer>
 			<key>ypos</key>
 			<integer>605</integer>
 		</dict>
 		<key>C588A899-89A9-4A33-8BE7-41186F741481</key>
 		<dict>
 			<key>xpos</key>
-			<integer>480</integer>
+			<integer>570</integer>
 			<key>ypos</key>
-			<integer>1055</integer>
+			<integer>925</integer>
 		</dict>
 		<key>CC59BD81-F02C-4DEA-A06E-451466C98724</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>1055</integer>
+			<integer>925</integer>
 		</dict>
 		<key>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>390</integer>
 			<key>ypos</key>
 			<integer>190</integer>
 		</dict>
 		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>480</integer>
+			<integer>570</integer>
 			<key>ypos</key>
 			<integer>485</integer>
 		</dict>
 		<key>E0B04215-9C40-4037-A58A-50F7EBA846FA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>825</integer>
+			<integer>915</integer>
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>
 		<key>E1C14329-E3FC-4F89-BB79-A437629639F5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>825</integer>
+			<integer>915</integer>
 			<key>ypos</key>
-			<integer>1055</integer>
+			<integer>925</integer>
 		</dict>
 		<key>F1ECBA85-D16C-49D7-9134-61F773979C25</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>485</integer>
 		</dict>
@@ -1350,7 +1295,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>xpos</key>
 			<integer>55</integer>
 			<key>ypos</key>
-			<integer>485</integer>
+			<integer>640</integer>
 		</dict>
 		<key>FB70CE11-6720-4306-99E3-F55AC3A7A292</key>
 		<dict>
@@ -1374,7 +1319,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2022.7</string>
+	<string>2022.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
