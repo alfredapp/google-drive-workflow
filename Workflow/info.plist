@@ -966,7 +966,6 @@ while IFS= read -r gdrive_path; do
 
   if [[ -d "${absolute_path}" ]]; then
     echo "Exists: ${gdrive_path}"
-    du -hs "${absolute_path}" | tr -d ' ' | sed 's/\t.*//'
     find "${absolute_path}" | wc -l | tr -d ' \n'
     echo ' paths'
   else
@@ -1319,7 +1318,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2022.8</string>
+	<string>2022.9</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
