@@ -12,7 +12,7 @@ else
   ENV['google_drive_path'].split(',').map { |p| Pathname.new(p.strip).expand_path }
 end
 
-unless Gdrive_paths.all?(&:exist?)
+unless Gdrive_paths.all?(&:directory?)
   print 'PATH_ERROR' # For Alfred's conditional
   abort 'Google Drive path does not exist!' # For Alfred's debugger
 end

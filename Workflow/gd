@@ -16,11 +16,11 @@ unless File.exist?(Cache_file)
   require 'open3'
 
   if Open3.capture2('ps', 'A').first.split("\n").any? { |l| l.match(/ruby.*Alfred.*rebuild_cache/) }
-    puts({ items: [{ title: 'Cache is being built…', subtitle: 'Please be patient. Depending on how many files you have, it can take a while.', "valid": false }] }.to_json)
+    puts({ items: [{ title: 'Cache is being built…', subtitle: 'Please be patient. Depending on how many files you have, it can take a while.', 'valid': false }] }.to_json)
     exit 0
   end
 
-  puts({ items: [{ title: 'No cache found!', subtitle: 'Run either :gdlaunchd or :gdrebuildcache. Consult the “About this Workflow” section.', "valid": false }] }.to_json)
+  puts({ items: [{ title: 'Build cache', subtitle: 'It will take a few minutes to finish, depending on how many files you have.', 'arg': 'build_cache' }] }.to_json)
   exit 0
 end
 
