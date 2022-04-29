@@ -8,11 +8,13 @@
 	<dict>
 		<key>09746453-F47E-4846-AB48-1C1C4387E977</key>
 		<array/>
+		<key>0A8D830A-3042-43A3-B238-6E224D43076E</key>
+		<array/>
 		<key>1DF785DD-C488-4DA0-B939-05739F26678C</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
+				<string>709587D3-3404-4E60-9685-F62ABE6DAF59</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -133,19 +135,6 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>A95AA673-095E-464D-9DA3-EE61D606F4B6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
 				<string>709587D3-3404-4E60-9685-F62ABE6DAF59</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -258,7 +247,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
+				<string>709587D3-3404-4E60-9685-F62ABE6DAF59</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -693,34 +682,6 @@ open "https://drive.google.com/drive/u/0/search?q=${encoded}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>readonly old_plist="${HOME}/Library/LaunchAgents/com.alfredapp.launchd.googledrivecache.plist"
-
-if [[ -f "${old_plist}" ]]; then
-  launchctl bootout "gui/$(id -u "${USER}")" "${old_plist}"
-  rm "${old_plist}"
-fi</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>A95AA673-095E-464D-9DA3-EE61D606F4B6</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -788,7 +749,7 @@ read -r -d '' plist_contents &lt;&lt;ENDPLIST
     &lt;array&gt;
         &lt;string&gt;/usr/bin/osascript&lt;/string&gt;
         &lt;string&gt;-e&lt;/string&gt;
-        &lt;string&gt;tell application id "com.runningwithcrayons.Alfred" to run trigger "rebuild_cache" in workflow "${alfred_workflow_bundleid}"&lt;/string&gt;
+        &lt;string&gt;tell application id &amp;quot;com.runningwithcrayons.Alfred&amp;quot; to run trigger &amp;quot;rebuild_cache&amp;quot; in workflow &amp;quot;${alfred_workflow_bundleid}&amp;quot;&lt;/string&gt;
     &lt;/array&gt;
 	&lt;key&gt;RunAtLoad&lt;/key&gt;
 	&lt;true/&gt;
@@ -1161,6 +1122,8 @@ Call `gd` and type to filter the contents of your Google Drive. `gdf` limits the
 
 ![](https://i.imgur.com/5hNOPzs.png)
 
+↵ opens the path; ⌥↵ reveals it in the Finder; ⇧↵ searches for it on Google Drive’s website.
+
 You’ll be asked to build the cache on your first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily and on boot.
 
 To rebuild the cache on demand, run `:gdrebuildcache`.
@@ -1189,7 +1152,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>note</key>
 			<string>OneUpdater</string>
 			<key>xpos</key>
-			<integer>975</integer>
+			<integer>795</integer>
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
@@ -1205,7 +1168,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</key>
 		<dict>
 			<key>xpos</key>
-			<integer>800</integer>
+			<integer>620</integer>
 			<key>ypos</key>
 			<integer>485</integer>
 		</dict>
@@ -1221,14 +1184,14 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1150</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>625</integer>
 		</dict>
 		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1150</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>
@@ -1253,7 +1216,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<key>note</key>
 			<string>launchd agent</string>
 			<key>xpos</key>
-			<integer>630</integer>
+			<integer>450</integer>
 			<key>ypos</key>
 			<integer>485</integer>
 		</dict>
@@ -1263,15 +1226,6 @@ The Workflow Environment Variables have defaults which will work for most. You o
 			<integer>310</integer>
 			<key>ypos</key>
 			<integer>670</integer>
-		</dict>
-		<key>A95AA673-095E-464D-9DA3-EE61D606F4B6</key>
-		<dict>
-			<key>note</key>
-			<string>Remove old agent</string>
-			<key>xpos</key>
-			<integer>450</integer>
-			<key>ypos</key>
-			<integer>485</integer>
 		</dict>
 		<key>AA7EFB63-A725-4B03-84FF-979F9F06BF8E</key>
 		<dict>
@@ -1292,7 +1246,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1325</integer>
+			<integer>1145</integer>
 			<key>ypos</key>
 			<integer>605</integer>
 		</dict>
@@ -1320,14 +1274,14 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>980</integer>
+			<integer>800</integer>
 			<key>ypos</key>
 			<integer>485</integer>
 		</dict>
 		<key>E0B04215-9C40-4037-A58A-50F7EBA846FA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1325</integer>
+			<integer>1145</integer>
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>
@@ -1348,7 +1302,7 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>F1ECBA85-D16C-49D7-9134-61F773979C25</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1150</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>485</integer>
 		</dict>
@@ -1380,8 +1334,6 @@ The Workflow Environment Variables have defaults which will work for most. You o
 		<key>result_limit</key>
 		<string>50</string>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
 	<string>2022.10</string>
 	<key>webaddress</key>

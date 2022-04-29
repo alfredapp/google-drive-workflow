@@ -12,6 +12,8 @@ Call `gd` and type to filter the contents of your Google Drive. `gdf` limits the
 
 ![](https://i.imgur.com/5hNOPzs.png)
 
+↵ opens the path; ⌥↵ reveals it in the Finder; ⇧↵ searches for it on Google Drive’s website.
+
 You’ll be asked to build the cache on your first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily and on boot.
 
 To rebuild the cache on demand, run `:gdrebuildcache`.
