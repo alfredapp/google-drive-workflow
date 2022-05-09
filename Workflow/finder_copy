@@ -1,0 +1,19 @@
+#!/usr/bin/osascript
+
+on run argv
+  -- "as alias" ensures full path on relative argv
+
+  if (length of argv) < 2 then
+    error "At least two arguments are required: a source and a target"
+  end if
+
+  set pathList to {}
+  set targetDir to (POSIX file (item -1 of argv) as alias)
+
+  repeat with itemNumber from 1 to (length of argv) - 1
+    set pathString to item itemNumber of argv
+    copy ((POSIX file pathString) as alias) to the end of the pathList
+  end repeat
+
+  tell application "Finder" to duplicate pathList to folder targetDir
+end

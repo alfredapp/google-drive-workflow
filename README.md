@@ -2,21 +2,29 @@
 
 List File Stream contents from Google Drive
 
-## Instructions
+<a href='https://github.com/alfredapp/google-drive-workflow/releases/latest/download/Google.Drive.alfredworkflow'>⤓ Download Workflow</a>
 
-An interim Workflow to bridge the gap until (if) Google Drives fixes the situation of files not being indexable by Spotlight (and thus Alfred).
+## About
+
+<!-- BEGIN ABOUT -->
+
+An interim Workflow to bridge the gap until (if) Google Drive fixes the situation of files not being indexable by Spotlight (and thus Alfred).
 
 Call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to folders.
 
-![](https://i.imgur.com/nBleTsJ.png)
+![](https://user-images.githubusercontent.com/1699443/167266488-61a6f874-4f6c-41fb-a2f4-2c359ed429a0.png)
 
-![](https://i.imgur.com/5hNOPzs.png)
+![](https://user-images.githubusercontent.com/1699443/167266492-26ab7d8c-536c-4c0a-ab3f-4639f3d24d54.png)
 
 ↵ opens the path; ⌥↵ reveals it in the Finder; ⇧↵ searches for it on Google Drive’s website.
 
 You’ll be asked to build the cache on your first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily and on boot.
 
 To rebuild the cache on demand, run `:gdrebuildcache`.
+
+The File Actions make it straightforward to copy and move files to a Google Drive folder.
+
+![](https://user-images.githubusercontent.com/1699443/167266470-cca9430b-4255-46b8-a772-d4253e5a01f2.png)
 
 The Workflow Environment Variables have defaults which will work for most. You only have to mess with them if you have an atypical setup.
 
@@ -27,10 +35,6 @@ The Workflow Environment Variables have defaults which will work for most. You o
 
 `!gddiagnostic` inspects the current Workflow configuration. It is to be run when asking for help.
 
-## Download
+<!-- END ABOUT -->
 
-[Get the latest release.](https://github.com/alfredapp/google-drive-workflow/releases/latest/download/Google.Drive.alfredworkflow)
-
-## License
-
-3-Clause BSD
+<a href='https://github.com/alfredapp/google-drive-workflow/releases/latest/download/Google.Drive.alfredworkflow'>⤓ Download Workflow</a>
