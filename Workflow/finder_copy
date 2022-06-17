@@ -7,13 +7,15 @@ on run argv
     error "At least two arguments are required: a source and a target"
   end if
 
-  set pathList to {}
-  set targetDir to (POSIX file (item -1 of argv) as alias)
+  set sourcePaths to {}
+  set targetDir to (POSIX file (last item of argv) as alias)
 
-  repeat with itemNumber from 1 to (length of argv) - 1
-    set pathString to item itemNumber of argv
-    copy ((POSIX file pathString) as alias) to the end of the pathList
+  repeat with itemNumber from 1 to (count of argv) - 1
+    try
+      set pathString to item itemNumber of argv
+      copy (POSIX file pathString as alias) to the end of sourcePaths
+    end try
   end repeat
 
-  tell application "Finder" to duplicate pathList to folder targetDir
+  tell application "Finder" to duplicate sourcePaths to folder targetDir
 end
