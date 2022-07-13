@@ -6,18 +6,14 @@ require 'open3'
 require 'pathname'
 require 'sqlite3'
 
-Gdrive_paths = if ENV['google_drive_path'].nil? || ENV['google_drive_path'].empty?
-  [Pathname.new('/Volumes/GoogleDrive')]
-else
-  ENV['google_drive_path'].split(',').map { |p| Pathname.new(p.strip).expand_path }
-end
+Gdrive_path = ENV['google_drive_path']
 
-unless Gdrive_paths.all?(&:directory?)
+unless Gdrive_path.directory?
   print 'PATH_ERROR' # For Alfred's conditional
   abort 'Google Drive path does not exist!' # For Alfred's debugger
 end
 
-Ignores = ENV['ignore_list'].split(',').map(&:strip) rescue []
+Ignores = ENV['ignore_list'].split("\n").map(&:strip).reject(&:empty?) rescue []
 Tmp_file = Pathname.new(ENV['alfred_workflow_cache']).join('tmp.db')
 Cache_file = Pathname.new(ENV['alfred_workflow_cache']).join('cache.db')
 Cache_file.dirname.mkpath
@@ -39,19 +35,20 @@ Tmp_file.delete if Tmp_file.exist? # Cleanup aborted cache rebuilds
 db = SQLite3::Database.new(Tmp_file.to_path)
 db.execute('CREATE TABLE main (fullpath TEXT, basename TINYTEXT, isdir BOOLEAN, accesstime INTEGER);')
 
-Gdrive_paths.each do |gdrive_path|
-  gdrive_path.find.lazy.each do |path|
-    Find.prune unless path.readable?
-    next if path.symlink?
-    next if Ignores.any? { |i| path.fnmatch?("*#{i}*") }
+Gdrive_path.find.lazy.each do |path|
+  Find.prune unless path.readable?
+  next if path.symlink?
+  next if Ignores.any? { |i| path.fnmatch?("*#{i}*") }
 
-    accesstime = path.atime.to_i rescue 0
-    fullpath = path.to_path
-    basename = path.basename.to_path
-    isdir = path.directory? ? 1 : 0
+  accesstime = path.atime.to_i rescue 0
+  fullpath = path.to_path
+  basename = path.basename.to_path
+  isdir = path.directory? ? 1 : 0
 
-    db.execute('INSERT INTO main (fullpath, basename, isdir, accesstime) VALUES (?, ?, ?, ?);', [fullpath, basename, isdir, accesstime])
-  end
+  db.execute(
+    'INSERT INTO main (fullpath, basename, isdir, accesstime) VALUES (?, ?, ?, ?);',
+    [fullpath, basename, isdir, accesstime]
+  )
 end
 
 Tmp_file.rename(Cache_file)
