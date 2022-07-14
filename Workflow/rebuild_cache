@@ -6,7 +6,7 @@ require 'open3'
 require 'pathname'
 require 'sqlite3'
 
-Gdrive_path = ENV['google_drive_path']
+Gdrive_path = Pathname.new(ENV['google_drive_path'])
 
 unless Gdrive_path.directory?
   print 'PATH_ERROR' # For Alfred's conditional

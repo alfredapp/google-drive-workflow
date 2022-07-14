@@ -874,6 +874,10 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
@@ -1571,8 +1575,8 @@ echo '### Architecture'
 echo
 
 echo
-echo '### Workflow environment variables'
-/usr/libexec/PlistBuddy -c 'print variables' info.plist
+echo '### Preferences'
+/usr/libexec/PlistBuddy -c 'print' prefs.plist
 
 echo
 echo '### Full Disk Access'
@@ -1707,6 +1711,10 @@ fi</string>
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
@@ -2222,7 +2230,7 @@ To report a problem, run `!gddiagnostic`.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2022.13</string>
+	<string>2022.14</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
