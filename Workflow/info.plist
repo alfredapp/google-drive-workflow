@@ -906,6 +906,21 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -923,21 +938,6 @@ fi</string>
 			<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1559,7 +1559,7 @@ fi</string>
 				<integer>102</integer>
 				<key>script</key>
 				<string>echo '### Workflow version'
-/usr/libexec/PlistBuddy -c 'print version' info.plist
+/usr/libexec/PlistBuddy -c 'Print :version' info.plist
 
 echo
 echo '### Alfred version'
@@ -1576,7 +1576,12 @@ echo
 
 echo
 echo '### Preferences'
-/usr/libexec/PlistBuddy -c 'print' prefs.plist
+
+if [[ -f 'prefs.plist' ]]; then
+  /usr/libexec/PlistBuddy -c 'Print' prefs.plist
+else
+  echo 'Default'
+fi
 
 echo
 echo '### Full Disk Access'
@@ -1588,19 +1593,15 @@ else
 fi
 
 echo
-echo '### Google drive paths'
+echo '### Google drive path'
 
-while IFS= read -r gdrive_path; do
-  absolute_path="${gdrive_path/#\~/${HOME}}"
-
-  if [[ -d "${absolute_path}" ]]; then
-    echo "Exists: ${gdrive_path}"
-    find "${absolute_path}" | wc -l | tr -d ' \n'
-    echo ' paths'
-  else
-    echo "Does NOT Exist: ${gdrive_path}"
-  fi
-done &lt; &lt;(sed 's/,/\n/g' &lt;&lt;&lt; "${google_drive_path}" | sed 's/ *//' | sed 's/ *$//')
+if [[ -d "${google_drive_path}" ]]; then
+  echo "Exists: ${google_drive_path}"
+  find "${google_drive_path}" | wc -l | tr -d ' \n'
+  echo ' paths'
+else
+  echo "Does NOT Exist: ${google_drive_path}"
+fi
 
 echo
 echo '### Cache dir'
@@ -2230,7 +2231,7 @@ To report a problem, run `!gddiagnostic`.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2022.14</string>
+	<string>2022.15</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
