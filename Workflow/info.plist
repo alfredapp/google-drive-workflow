@@ -1804,9 +1804,7 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>An interim Workflow to bridge the gap until (if) Google Drive fixes the situation of files not being indexable by Spotlight (and thus Alfred).
-
-Call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to folders.
+	<string>Call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to folders.
 
 ![Alfred search for gd](images/about/gd.png)
 
@@ -2147,17 +2145,19 @@ To report a problem, run `!gddiagnostic`.</string>
 			<dict>
 				<key>default</key>
 				<string>/Volumes/GoogleDrive</string>
-				<key>filtermode</key>
-				<integer>0</integer>
+				<key>placeholder</key>
+				<string></string>
 				<key>required</key>
 				<false/>
+				<key>trim</key>
+				<true/>
 			</dict>
 			<key>description</key>
-			<string></string>
+			<string>The location of Google Drive on your file system. Can take multiple paths separated by commas.</string>
 			<key>label</key>
 			<string>Google Drive Path</string>
 			<key>type</key>
-			<string>filepicker</string>
+			<string>textfield</string>
 			<key>variable</key>
 			<string>google_drive_path</string>
 		</dict>
@@ -2231,7 +2231,7 @@ To report a problem, run `!gddiagnostic`.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2022.15</string>
+	<string>2022.16</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>

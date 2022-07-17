@@ -6,9 +6,9 @@ require 'open3'
 require 'pathname'
 require 'sqlite3'
 
-Gdrive_path = Pathname.new(ENV['google_drive_path'])
+Gdrive_paths = ENV['google_drive_path'].split(',').map { |p| Pathname.new(p.strip).expand_path }
 
-unless Gdrive_path.directory?
+unless Gdrive_paths.all?(&:directory?)
   print 'PATH_ERROR' # For Alfred's conditional
   abort 'Google Drive path does not exist!' # For Alfred's debugger
 end
@@ -35,20 +35,19 @@ Tmp_file.delete if Tmp_file.exist? # Cleanup aborted cache rebuilds
 db = SQLite3::Database.new(Tmp_file.to_path)
 db.execute('CREATE TABLE main (fullpath TEXT, basename TINYTEXT, isdir BOOLEAN, accesstime INTEGER);')
 
-Gdrive_path.find.lazy.each do |path|
-  Find.prune unless path.readable?
-  next if path.symlink?
-  next if Ignores.any? { |i| path.fnmatch?("*#{i}*") }
+Gdrive_paths.each do |gdrive_path|
+  gdrive_path.find.lazy.each do |path|
+    Find.prune unless path.readable?
+    next if path.symlink?
+    next if Ignores.any? { |i| path.fnmatch?("*#{i}*") }
 
-  accesstime = path.atime.to_i rescue 0
-  fullpath = path.to_path
-  basename = path.basename.to_path
-  isdir = path.directory? ? 1 : 0
+    accesstime = path.atime.to_i rescue 0
+    fullpath = path.to_path
+    basename = path.basename.to_path
+    isdir = path.directory? ? 1 : 0
 
-  db.execute(
-    'INSERT INTO main (fullpath, basename, isdir, accesstime) VALUES (?, ?, ?, ?);',
-    [fullpath, basename, isdir, accesstime]
-  )
+    db.execute('INSERT INTO main (fullpath, basename, isdir, accesstime) VALUES (?, ?, ?, ?);', [fullpath, basename, isdir, accesstime])
+  end
 end
 
 Tmp_file.rename(Cache_file)

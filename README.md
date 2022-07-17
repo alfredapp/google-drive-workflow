@@ -6,8 +6,6 @@ List File Stream contents from Google Drive
 
 ## About
 
-An interim Workflow to bridge the gap until (if) Google Drive fixes the situation of files not being indexable by Spotlight (and thus Alfred).
-
 Call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to folders.
 
 ![Alfred search for gd](Workflow/images/about/gd.png)
