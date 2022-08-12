@@ -5,7 +5,7 @@ require 'json'
 require 'sqlite3'
 
 Dir_only = ARGV[0] == 'dir_only' ? 'isdir = 1 AND' : ''
-Query = ARGV[1].unicode_normalize.split(' ').map { |w| "%#{w}%" }
+Query = ARGV[1].split(' ').map { |w| "%#{w}%" }
 Limit = ENV['result_limit'].to_i <= 0 ? 50 : ENV['result_limit'].to_i
 Tmp_file = File.join(ENV['alfred_workflow_cache'], 'tmp.db')
 Cache_file = File.join(ENV['alfred_workflow_cache'], 'cache.db')
