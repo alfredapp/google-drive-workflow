@@ -2230,8 +2230,10 @@ To report a problem, run `!gddiagnostic`.</string>
 			<string>auto_refresh</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2022.17</string>
+	<string>2022.18</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>

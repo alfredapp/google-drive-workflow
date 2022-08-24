@@ -43,7 +43,7 @@ Gdrive_paths.each do |gdrive_path|
 
     accesstime = path.atime.to_i rescue 0
     fullpath = path.to_path
-    basename = path.basename.to_path
+    basename = path.basename.to_path.unicode_normalize
     isdir = path.directory? ? 1 : 0
 
     db.execute('INSERT INTO main (fullpath, basename, isdir, accesstime) VALUES (?, ?, ?, ?);', [fullpath, basename, isdir, accesstime])
