@@ -29,11 +29,13 @@ db = SQLite3::Database.new(Cache_file)
 Results = db.execute("SELECT fullpath FROM main WHERE #{Dir_only} #{Array.new(Query.length, 'basename LIKE ?').join(' AND ')} ORDER BY accesstime DESC LIMIT ?;", Query, Limit).flatten
 
 Script_filter_items = Results.each_with_object([]) { |path, array|
+  short_path = path.sub(%r{^/Users/.+?/}, '~/').sub(%r{^~/Library/CloudStorage/}, '')
+
   array.push(
     uid: path,
     type: 'file',
     title: File.basename(path),
-    subtitle: path,
+    subtitle: short_path,
     icon: { path: path, type: 'fileicon' },
     arg: path
   )
