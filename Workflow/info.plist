@@ -1856,19 +1856,23 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Call `gd` and type to filter the contents of your Google Drive. `gdf` limits the search to folders.
+	<string>## Usage
+
+Run the Seach Keyword (default: `gd`) or Folder Seach Keyword (default: `gdf`) to filter the contents of your Google Drive.
 
 ![Alfred search for gd](images/about/gd.png)
 
 ![Alfred search for gd fran](images/about/gdfran.png)
 
-↩ opens the path; ⌥↩ reveals it in the Finder; ⇧↩ searches for it on Google Drive’s website.
+* ↩: Open.
+* ⌥↩: Reveal in Finder.
+* ⇧↩: Search on Google Drive’s website.
 
 You’ll be asked to build the cache on your first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily and on boot.
 
 To rebuild the cache on demand, run `:gdrebuildcache`.
 
-The File Actions make it straightforward to copy and move files to a Google Drive folder.
+The [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/) make it straightforward to copy and move files to a Google Drive folder.
 
 ![File Actions for Google Drive copy and mode](images/about/fileaction.png)
 
@@ -2210,7 +2214,7 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>/Volumes/GoogleDrive</string>
+				<string>gd</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -2219,17 +2223,61 @@ To report a problem, run `!gddiagnostic`.</string>
 				<true/>
 			</dict>
 			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Seach Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>search_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>gdf</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Keyword to search the contents of your Google Drive.</string>
+			<key>label</key>
+			<string>Folder Search Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>dir_search_keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>/Volumes/GoogleDrive</string>
+				<key>filtermode</key>
+				<integer>1</integer>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+			</dict>
+			<key>description</key>
 			<string>The location of Google Drive on your file system. Can take multiple paths separated by commas.</string>
 			<key>label</key>
 			<string>Google Drive Path</string>
 			<key>type</key>
-			<string>textfield</string>
+			<string>filepicker</string>
 			<key>variable</key>
 			<string>google_drive_path</string>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>default</key>
+				<string>20</string>
 				<key>pairs</key>
 				<array>
 					<array>
@@ -2297,7 +2345,7 @@ To report a problem, run `!gddiagnostic`.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2022.21</string>
+	<string>2022.22</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
