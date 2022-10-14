@@ -4,6 +4,8 @@ List File Stream contents from Google Drive
 
 <a href='https://github.com/alfredapp/google-drive-workflow/releases/latest/download/Google.Drive.alfredworkflow'>⤓ Download Workflow</a>
 
+> On Alfred 4 use <a href='https://github.com/alfredapp/google-drive-workflow/releases/download/2022.12/Google.Drive.alfredworkflow'>alternative link</a>
+
 ## Usage
 
 Run the Seach Keyword (default: `gd`) or Folder Seach Keyword (default: `gdf`) to filter the contents of your Google Drive.
