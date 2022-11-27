@@ -6,6 +6,7 @@ require 'sqlite3'
 
 Dir_only = ARGV[0] == 'dir_only' ? 'isdir = 1 AND' : ''
 Query = ARGV[1].split(' ').map { |w| "%#{w.unicode_normalize}%" }
+Full_path_prefix = ARGV[2]
 Limit = ENV['result_limit'].to_i <= 0 ? 50 : ENV['result_limit'].to_i
 Tmp_file = File.join(ENV['alfred_workflow_cache'], 'tmp.db')
 Cache_file = File.join(ENV['alfred_workflow_cache'], 'cache.db')
@@ -26,7 +27,14 @@ end
 
 # Filter paths
 db = SQLite3::Database.new(Cache_file)
-Results = db.execute("SELECT fullpath FROM main WHERE #{Dir_only} #{Array.new(Query.length, 'basename LIKE ?').join(' AND ')} ORDER BY accesstime DESC LIMIT ?;", Query, Limit).flatten
+
+if Full_path_prefix == nil or Full_path_prefix.empty?
+  sql = "SELECT fullpath FROM main WHERE #{Dir_only} #{Array.new(Query.length, 'basename LIKE ?').join(' AND ')} ORDER BY accesstime DESC LIMIT ?;"
+else
+  sql = "SELECT fullpath FROM main WHERE #{Dir_only} #{Array.new(Query.length, 'basename LIKE ?').join(' AND ')} AND fullpath like '#{Full_path_prefix}%' ORDER BY accesstime DESC LIMIT ?;"
+end
+Results = db.execute(sql, Query, Limit).flatten
+
 
 Script_filter_items = Results.each_with_object([]) { |path, array|
   short_path = path.sub(%r{^/Users/.+?/}, '~/').sub(%r{^~/Library/CloudStorage/}, '')
