@@ -836,6 +836,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -853,21 +868,6 @@
 			<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -960,7 +960,15 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string># Checks
+				<string># Remove previous launchd
+readonly old_plist="${HOME}/Library/LaunchAgents/com.alfredapp.googledrive.plist"
+
+if [[ -f "${plist_file}" ]]; then
+  launchctl bootout "gui/$(id -u "${USER}")" "${old_plist}"
+  rm "${old_plist}"
+fi
+
+# Checks
 if [[ -z "${alfred_workflow_bundleid}" ]]; then
   echo 'Workflow is missing bundle identifier!' &gt;&amp;2
   exit 1
@@ -2223,7 +2231,7 @@ To report a problem, run `!gddiagnostic`.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2022.23</string>
+	<string>2022.24</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
