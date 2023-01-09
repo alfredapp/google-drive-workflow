@@ -18,6 +18,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D788FF33-CE5C-4417-9D48-09E987C6CC79</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Search on Google Drive online</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>064BD4C7-1B8A-4CD3-959F-5FCF7B07BA50</key>
 		<array>
@@ -141,6 +151,16 @@
 		</array>
 		<key>3A16BB85-ABC4-42B7-B6CD-37C9534A8A2E</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D05072E4-1712-4716-8493-2AE621963C5B</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Search on Google Drive online</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>60984788-5E27-4BA1-B6E8-61B9536AB211</string>
@@ -408,6 +428,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D05072E4-1712-4716-8493-2AE621963C5B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>36804DD4-E03A-47FA-86D2-68D613A5A5E8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
 		<array>
 			<dict>
@@ -437,6 +470,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>4B6C4A31-7E4F-42E0-A702-786DE0EFDCA4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D788FF33-CE5C-4417-9D48-09E987C6CC79</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>36804DD4-E03A-47FA-86D2-68D613A5A5E8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -601,6 +647,14 @@
 			<string>alfred.workflow.trigger.fallback</string>
 			<key>uid</key>
 			<string>3A16BB85-ABC4-42B7-B6CD-37C9534A8A2E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>D05072E4-1712-4716-8493-2AE621963C5B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -872,6 +926,42 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>soundname</key>
+				<string>Hero</string>
+				<key>systemsound</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.playsound</string>
+			<key>uid</key>
+			<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>text</key>
+				<string>Search Google Drive Folders for '{query}'</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>0364D5B3-0C34-4B98-93E5-9A1A625A84C3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>D788FF33-CE5C-4417-9D48-09E987C6CC79</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -898,34 +988,6 @@
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>F16508BA-1129-4086-AFDC-38C208EE34D1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>soundname</key>
-				<string>Hero</string>
-				<key>systemsound</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.playsound</string>
-			<key>uid</key>
-			<string>E0B04215-9C40-4037-A58A-50F7EBA846FA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>text</key>
-				<string>Search Google Drive Folders for '{query}'</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.fallback</string>
-			<key>uid</key>
-			<string>0364D5B3-0C34-4B98-93E5-9A1A625A84C3</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -960,15 +1022,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string># Remove previous launchd
-readonly old_plist="${HOME}/Library/LaunchAgents/com.alfredapp.googledrive.plist"
-
-if [[ -f "${plist_file}" ]]; then
-  launchctl bootout "gui/$(id -u "${USER}")" "${old_plist}"
-  rm "${old_plist}"
-fi
-
-# Checks
+				<string># Checks
 if [[ -z "${alfred_workflow_bundleid}" ]]; then
   echo 'Workflow is missing bundle identifier!' &gt;&amp;2
   exit 1
@@ -1757,7 +1811,7 @@ fi</string>
 	<key>readme</key>
 	<string>## Usage
 
-Search the contents of your Google Drive via the Search Keyword (default: `gd`) or Folder Search Keyword (default: `gdf`).
+Search the contents of your Google Drive via the Search Keyword (default: `gd`) or Folder Search Keyword (default: `gdf`). [Fallback Searches](https://www.alfredapp.com/help/features/default-results/fallback-searches/) are included.
 
 ![Alfred search for gd](images/about/gd.png)
 
@@ -2021,12 +2075,26 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>490</real>
 		</dict>
+		<key>D05072E4-1712-4716-8493-2AE621963C5B</key>
+		<dict>
+			<key>xpos</key>
+			<real>540</real>
+			<key>ypos</key>
+			<real>80</real>
+		</dict>
 		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
 		<dict>
 			<key>xpos</key>
 			<real>1050</real>
 			<key>ypos</key>
 			<real>645</real>
+		</dict>
+		<key>D788FF33-CE5C-4417-9D48-09E987C6CC79</key>
+		<dict>
+			<key>xpos</key>
+			<real>335</real>
+			<key>ypos</key>
+			<real>520</real>
 		</dict>
 		<key>E0B04215-9C40-4037-A58A-50F7EBA846FA</key>
 		<dict>
@@ -2054,7 +2122,7 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>xpos</key>
 			<real>460</real>
 			<key>ypos</key>
-			<real>490</real>
+			<real>540</real>
 		</dict>
 		<key>F1ECBA85-D16C-49D7-9134-61F773979C25</key>
 		<dict>
@@ -2231,7 +2299,7 @@ To report a problem, run `!gddiagnostic`.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2022.24</string>
+	<string>2023.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
