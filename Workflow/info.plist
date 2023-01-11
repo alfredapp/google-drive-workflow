@@ -20,11 +20,11 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>D788FF33-CE5C-4417-9D48-09E987C6CC79</string>
+				<string>D99507F9-98A5-42E2-9E91-017CDCAD6205</string>
 				<key>modifiers</key>
 				<integer>131072</integer>
 				<key>modifiersubtext</key>
-				<string>Search on Google Drive online</string>
+				<string>Search on Google Drive’s website</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -56,11 +56,13 @@
 				<false/>
 			</dict>
 		</array>
-		<key>07C1CCF2-A741-4061-BEE0-9266E2A1249A</key>
+		<key>09746453-F47E-4846-AB48-1C1C4387E977</key>
+		<array/>
+		<key>0AEF0611-7FCE-48AF-9D84-E52C08267092</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CB492409-2057-485C-9EC6-24E81F769C52</string>
+				<string>3DD8D0EE-FAEB-46D3-9F16-A3688AAE91E5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -69,8 +71,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>09746453-F47E-4846-AB48-1C1C4387E977</key>
-		<array/>
 		<key>1DF785DD-C488-4DA0-B939-05739F26678C</key>
 		<array>
 			<dict>
@@ -123,19 +123,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>36804DD4-E03A-47FA-86D2-68D613A5A5E8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8CBEC855-2AFB-420C-85A9-C61D7CF64B79</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>38833725-E5E9-4B37-91B2-0CE7683EB60E</key>
 		<array>
 			<dict>
@@ -153,11 +140,11 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D05072E4-1712-4716-8493-2AE621963C5B</string>
+				<string>0AEF0611-7FCE-48AF-9D84-E52C08267092</string>
 				<key>modifiers</key>
 				<integer>131072</integer>
 				<key>modifiersubtext</key>
-				<string>Search on Google Drive online</string>
+				<string>Search on Google Drive’s website</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -168,6 +155,55 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3DD8D0EE-FAEB-46D3-9F16-A3688AAE91E5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>CDCA9FD9-014B-444B-9B4A-C5F745EB4A8D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C48766D6-FEEC-4402-BAC3-1618225F4F2C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>0F545F17-E49A-4B34-934C-3A4A7C07C8D6</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>709587D3-3404-4E60-9685-F62ABE6DAF59</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>5D3BF045-A3D3-407F-AF82-EB3D457BD98E</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -211,21 +247,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4D19FF62-1707-4E48-9524-67CFDB01B0B0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>07C1CCF2-A741-4061-BEE0-9266E2A1249A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>7FA3349A-14B3-4B17-B15F-E35FBE9AB1F2</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
 		<array>
 			<dict>
@@ -243,27 +264,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
+				<string>3DD8D0EE-FAEB-46D3-9F16-A3688AAE91E5</string>
 				<key>modifiers</key>
-				<integer>524288</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>Reveal in Finder</string>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>60E2C8DB-E8DD-442C-A61C-BD56992A05A3</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>36804DD4-E03A-47FA-86D2-68D613A5A5E8</string>
-				<key>modifiers</key>
-				<integer>131072</integer>
-				<key>modifiersubtext</key>
-				<string>Search on Google Drive online</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>F16508BA-1129-4086-AFDC-38C208EE34D1</string>
+				<string>CD25C256-18E7-4392-AF5B-38E256740C74</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -350,11 +364,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8CBEC855-2AFB-420C-85A9-C61D7CF64B79</key>
+		<key>AA7EFB63-A725-4B03-84FF-979F9F06BF8E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C48766D6-FEEC-4402-BAC3-1618225F4F2C</string>
+				<string>72CFC763-00BD-476E-9200-3B699F931994</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -363,11 +377,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>AA7EFB63-A725-4B03-84FF-979F9F06BF8E</key>
+		<key>AE4BF001-D444-4CB2-A5F3-9585CD7292B8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>72CFC763-00BD-476E-9200-3B699F931994</string>
+				<string>F2FFFFEA-4DBF-416B-B182-5BAAE26D51FA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -402,37 +416,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>CB492409-2057-485C-9EC6-24E81F769C52</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>03B3721D-4490-4C8B-9461-263C413C85A1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>CC59BD81-F02C-4DEA-A06E-451466C98724</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>C588A899-89A9-4A33-8BE7-41186F741481</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D05072E4-1712-4716-8493-2AE621963C5B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>36804DD4-E03A-47FA-86D2-68D613A5A5E8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -478,11 +466,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D788FF33-CE5C-4417-9D48-09E987C6CC79</key>
+		<key>D99507F9-98A5-42E2-9E91-017CDCAD6205</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>36804DD4-E03A-47FA-86D2-68D613A5A5E8</string>
+				<string>3DD8D0EE-FAEB-46D3-9F16-A3688AAE91E5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -495,36 +483,11 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F2FFFFEA-4DBF-416B-B182-5BAAE26D51FA</string>
+				<string>AE4BF001-D444-4CB2-A5F3-9585CD7292B8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F16508BA-1129-4086-AFDC-38C208EE34D1</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>709587D3-3404-4E60-9685-F62ABE6DAF59</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>0CCA3F97-DD99-46DC-87EF-6E0801668086</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -558,11 +521,25 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>F833AE54-F922-42CA-AD04-57855CADA195</string>
+				<string>F982582A-8E70-4F85-B59C-3881DB55A278</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>sourceoutputuid</key>
+				<string>5D02941C-AE34-4A83-B84A-AE74379BBEA9</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>60E2C8DB-E8DD-442C-A61C-BD56992A05A3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>A113E4A7-CA70-4916-8890-9BAD3A14047B</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -580,11 +557,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F833AE54-F922-42CA-AD04-57855CADA195</key>
+		<key>F982582A-8E70-4F85-B59C-3881DB55A278</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>4D19FF62-1707-4E48-9524-67CFDB01B0B0</string>
+				<string>8003CC8C-61F8-430F-B8A0-5531F7A184D8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -597,27 +574,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>09746453-F47E-4846-AB48-1C1C4387E977</string>
-				<key>modifiers</key>
-				<integer>524288</integer>
-				<key>modifiersubtext</key>
-				<string>Reveal in Finder</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>36804DD4-E03A-47FA-86D2-68D613A5A5E8</string>
-				<key>modifiers</key>
-				<integer>131072</integer>
-				<key>modifiersubtext</key>
-				<string>Search on Google Drive online</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>F16508BA-1129-4086-AFDC-38C208EE34D1</string>
+				<string>3DD8D0EE-FAEB-46D3-9F16-A3688AAE91E5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -651,10 +608,22 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>search_website</key>
+					<string>true</string>
+				</dict>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>D05072E4-1712-4716-8493-2AE621963C5B</string>
+			<string>0AEF0611-7FCE-48AF-9D84-E52C08267092</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -703,7 +672,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>gd</string>
+				<string>{var:search_keyword}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -715,7 +684,7 @@
 				<key>runningsubtext</key>
 				<string>Loading cache…</string>
 				<key>script</key>
-				<string>./gd 'all' "${1}"</string>
+				<string>./gd 'all' 'suggest_website' "${1}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -752,28 +721,62 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:reveal_in_finder}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Reveal in Finder</string>
+						<key>uid</key>
+						<string>CDCA9FD9-014B-444B-9B4A-C5F745EB4A8D</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:search_website}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Search Website</string>
+						<key>uid</key>
+						<string>0F545F17-E49A-4B34-934C-3A4A7C07C8D6</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:build_cache}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>5</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Rebuild Cache</string>
+						<key>uid</key>
+						<string>5D3BF045-A3D3-407F-AF82-EB3D457BD98E</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Open Path</string>
+				<key>hideelse</key>
 				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>function run(argv) {
-  const basename = $(argv[0]).lastPathComponent.js
-  return encodeURIComponent(basename)
-}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>36804DD4-E03A-47FA-86D2-68D613A5A5E8</string>
+			<string>3DD8D0EE-FAEB-46D3-9F16-A3688AAE91E5</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -791,7 +794,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>gdf</string>
+				<string>{var:dir_search_keyword}</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -803,7 +806,7 @@
 				<key>runningsubtext</key>
 				<string>Loading cache…</string>
 				<key>script</key>
-				<string>./gd 'dir_only' "${1}"</string>
+				<string>./gd 'dir_only' 'suggest_website' "${1}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -877,19 +880,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
-			<key>uid</key>
-			<string>8CBEC855-2AFB-420C-85A9-C61D7CF64B79</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>openwith</key>
 				<string></string>
 				<key>sourcefile</key>
@@ -952,42 +942,22 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>D788FF33-CE5C-4417-9D48-09E987C6CC79</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>build_cache</string>
-						<key>outputlabel</key>
-						<string>Build cache</string>
-						<key>uid</key>
-						<string>0CCA3F97-DD99-46DC-87EF-6E0801668086</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Open</string>
-				<key>hideelse</key>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
 				<false/>
+				<key>variables</key>
+				<dict>
+					<key>search_website</key>
+					<string>true</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>F16508BA-1129-4086-AFDC-38C208EE34D1</string>
+			<string>D99507F9-98A5-42E2-9E91-017CDCAD6205</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1298,48 +1268,20 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>File operation failed</string>
+				<key>tasksettings</key>
+				<dict>
+					<key>save_in</key>
+					<string>{var:target_dir}</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.copy</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>03B3721D-4490-4C8B-9461-263C413C85A1</string>
+			<string>8003CC8C-61F8-430F-B8A0-5531F7A184D8</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>IFS=$'\t' read -rA files &lt;&lt;&lt; "${file_list}"
-
-./finder_"${action}" "${files[@]}" "${1}" 2&gt;&amp;1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F833AE54-F922-42CA-AD04-57855CADA195</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1367,7 +1309,7 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>Loading cache…</string>
 				<key>script</key>
-				<string>./gd 'dir_only' "${1}"</string>
+				<string>./gd 'dir_only' 'no_suggest_website' "${1}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1395,11 +1337,11 @@ fi</string>
 				<array>
 					<dict>
 						<key>inputstring</key>
-						<string></string>
+						<string>{var:build_cache}</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>5</integer>
 						<key>matchstring</key>
 						<string>build_cache</string>
 						<key>outputlabel</key>
@@ -1407,11 +1349,39 @@ fi</string>
 						<key>uid</key>
 						<string>0CCA3F97-DD99-46DC-87EF-6E0801668086</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>copy</string>
+						<key>outputlabel</key>
+						<string>Copy</string>
+						<key>uid</key>
+						<string>5D02941C-AE34-4A83-B84A-AE74379BBEA9</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>move</string>
+						<key>outputlabel</key>
+						<string>Move</string>
+						<key>uid</key>
+						<string>A113E4A7-CA70-4916-8890-9BAD3A14047B</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
-				<string>Move or copy</string>
+				<string></string>
 				<key>hideelse</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -1423,55 +1393,22 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{query}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>.*Finder got an error:.*</string>
-						<key>outputlabel</key>
-						<string>Finder error</string>
-						<key>uid</key>
-						<string>7FA3349A-14B3-4B17-B15F-E35FBE9AB1F2</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
 				<false/>
+				<key>variables</key>
+				<dict>
+					<key>target_dir</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>4D19FF62-1707-4E48-9524-67CFDB01B0B0</string>
+			<string>AE4BF001-D444-4CB2-A5F3-9585CD7292B8</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string> \([-\d]+\)$</string>
-				<key>regexcaseinsensitive</key>
-				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>CB492409-2057-485C-9EC6-24E81F769C52</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1498,23 +1435,48 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
+				<key>delimiter</key>
+				<string>	</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
 				<integer>1</integer>
-				<key>matchstring</key>
-				<string>.*execution error: </string>
-				<key>regexcaseinsensitive</key>
+				<key>trimarguments</key>
 				<false/>
-				<key>regexmultiline</key>
-				<false/>
-				<key>replacestring</key>
-				<string></string>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>custominputarg</key>
+				<string>{var:file_list}</string>
+				<key>usecustominputarg</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
+			<string>alfred.workflow.utility.split</string>
 			<key>uid</key>
-			<string>07C1CCF2-A741-4061-BEE0-9266E2A1249A</string>
+			<string>F982582A-8E70-4F85-B59C-3881DB55A278</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>save_in</key>
+					<string>{var:target_dir}</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.move</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>CD25C256-18E7-4392-AF5B-38E256740C74</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1530,6 +1492,34 @@ fi</string>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
 			<string>BB3FA68D-223B-4A16-B30B-4FAE576211A1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>	</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>1</integer>
+				<key>trimarguments</key>
+				<false/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>inboundconfig</key>
+			<dict>
+				<key>custominputarg</key>
+				<string>{var:file_list}</string>
+				<key>usecustominputarg</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>60E2C8DB-E8DD-442C-A61C-BD56992A05A3</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1837,13 +1827,6 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>490</real>
 		</dict>
-		<key>03B3721D-4490-4C8B-9461-263C413C85A1</key>
-		<dict>
-			<key>xpos</key>
-			<real>1585</real>
-			<key>ypos</key>
-			<real>980</real>
-		</dict>
 		<key>064BD4C7-1B8A-4CD3-959F-5FCF7B07BA50</key>
 		<dict>
 			<key>xpos</key>
@@ -1851,21 +1834,19 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>1245</real>
 		</dict>
-		<key>07C1CCF2-A741-4061-BEE0-9266E2A1249A</key>
-		<dict>
-			<key>note</key>
-			<string>Cleanup error start</string>
-			<key>xpos</key>
-			<real>1355</real>
-			<key>ypos</key>
-			<real>1010</real>
-		</dict>
 		<key>09746453-F47E-4846-AB48-1C1C4387E977</key>
 		<dict>
 			<key>xpos</key>
 			<real>650</real>
 			<key>ypos</key>
 			<real>195</real>
+		</dict>
+		<key>0AEF0611-7FCE-48AF-9D84-E52C08267092</key>
+		<dict>
+			<key>xpos</key>
+			<real>335</real>
+			<key>ypos</key>
+			<real>80</real>
 		</dict>
 		<key>1DF785DD-C488-4DA0-B939-05739F26678C</key>
 		<dict>
@@ -1897,13 +1878,6 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>1300</real>
 		</dict>
-		<key>36804DD4-E03A-47FA-86D2-68D613A5A5E8</key>
-		<dict>
-			<key>xpos</key>
-			<real>650</real>
-			<key>ypos</key>
-			<real>345</real>
-		</dict>
 		<key>38833725-E5E9-4B37-91B2-0CE7683EB60E</key>
 		<dict>
 			<key>xpos</key>
@@ -1917,6 +1891,13 @@ To report a problem, run `!gddiagnostic`.</string>
 			<real>75</real>
 			<key>ypos</key>
 			<real>50</real>
+		</dict>
+		<key>3DD8D0EE-FAEB-46D3-9F16-A3688AAE91E5</key>
+		<dict>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>265</real>
 		</dict>
 		<key>3F04830B-47DD-40B4-8F96-5FEE3E48F217</key>
 		<dict>
@@ -1939,13 +1920,6 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>780</real>
 		</dict>
-		<key>4D19FF62-1707-4E48-9524-67CFDB01B0B0</key>
-		<dict>
-			<key>xpos</key>
-			<real>1220</real>
-			<key>ypos</key>
-			<real>1000</real>
-		</dict>
 		<key>58E78B44-F5EC-4DA1-B098-1412774CC752</key>
 		<dict>
 			<key>xpos</key>
@@ -1961,6 +1935,13 @@ To report a problem, run `!gddiagnostic`.</string>
 			<real>255</real>
 			<key>ypos</key>
 			<real>195</real>
+		</dict>
+		<key>60E2C8DB-E8DD-442C-A61C-BD56992A05A3</key>
+		<dict>
+			<key>xpos</key>
+			<real>1050</real>
+			<key>ypos</key>
+			<real>1140</real>
 		</dict>
 		<key>6609DBC2-7BE6-4337-AF62-11FD6561F806</key>
 		<dict>
@@ -1992,6 +1973,13 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>825</real>
 		</dict>
+		<key>8003CC8C-61F8-430F-B8A0-5531F7A184D8</key>
+		<dict>
+			<key>xpos</key>
+			<real>1220</real>
+			<key>ypos</key>
+			<real>980</real>
+		</dict>
 		<key>8A8E84BE-6A07-43E0-9C53-B983477C60DD</key>
 		<dict>
 			<key>xpos</key>
@@ -2006,13 +1994,6 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>980</real>
 		</dict>
-		<key>8CBEC855-2AFB-420C-85A9-C61D7CF64B79</key>
-		<dict>
-			<key>xpos</key>
-			<real>800</real>
-			<key>ypos</key>
-			<real>375</real>
-		</dict>
 		<key>AA7EFB63-A725-4B03-84FF-979F9F06BF8E</key>
 		<dict>
 			<key>note</key>
@@ -2021,6 +2002,13 @@ To report a problem, run `!gddiagnostic`.</string>
 			<real>420</real>
 			<key>ypos</key>
 			<real>825</real>
+		</dict>
+		<key>AE4BF001-D444-4CB2-A5F3-9585CD7292B8</key>
+		<dict>
+			<key>xpos</key>
+			<real>800</real>
+			<key>ypos</key>
+			<real>1010</real>
 		</dict>
 		<key>BB3FA68D-223B-4A16-B30B-4FAE576211A1</key>
 		<dict>
@@ -2039,7 +2027,7 @@ To report a problem, run `!gddiagnostic`.</string>
 		<key>C48766D6-FEEC-4402-BAC3-1618225F4F2C</key>
 		<dict>
 			<key>xpos</key>
-			<real>870</real>
+			<real>650</real>
 			<key>ypos</key>
 			<real>345</real>
 		</dict>
@@ -2050,15 +2038,6 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>1240</real>
 		</dict>
-		<key>CB492409-2057-485C-9EC6-24E81F769C52</key>
-		<dict>
-			<key>note</key>
-			<string>Cleanup error end</string>
-			<key>xpos</key>
-			<real>1475</real>
-			<key>ypos</key>
-			<real>1010</real>
-		</dict>
 		<key>CC59BD81-F02C-4DEA-A06E-451466C98724</key>
 		<dict>
 			<key>note</key>
@@ -2068,19 +2047,19 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>1240</real>
 		</dict>
+		<key>CD25C256-18E7-4392-AF5B-38E256740C74</key>
+		<dict>
+			<key>xpos</key>
+			<real>1220</real>
+			<key>ypos</key>
+			<real>1110</real>
+		</dict>
 		<key>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</key>
 		<dict>
 			<key>xpos</key>
 			<real>650</real>
 			<key>ypos</key>
 			<real>490</real>
-		</dict>
-		<key>D05072E4-1712-4716-8493-2AE621963C5B</key>
-		<dict>
-			<key>xpos</key>
-			<real>540</real>
-			<key>ypos</key>
-			<real>80</real>
 		</dict>
 		<key>D5A28DD0-88F4-4CB2-A750-118B1E0ADEE7</key>
 		<dict>
@@ -2089,7 +2068,7 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>645</real>
 		</dict>
-		<key>D788FF33-CE5C-4417-9D48-09E987C6CC79</key>
+		<key>D99507F9-98A5-42E2-9E91-017CDCAD6205</key>
 		<dict>
 			<key>xpos</key>
 			<real>335</real>
@@ -2117,13 +2096,6 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>980</real>
 		</dict>
-		<key>F16508BA-1129-4086-AFDC-38C208EE34D1</key>
-		<dict>
-			<key>xpos</key>
-			<real>460</real>
-			<key>ypos</key>
-			<real>540</real>
-		</dict>
 		<key>F1ECBA85-D16C-49D7-9134-61F773979C25</key>
 		<dict>
 			<key>xpos</key>
@@ -2136,7 +2108,7 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>xpos</key>
 			<real>870</real>
 			<key>ypos</key>
-			<real>1000</real>
+			<real>985</real>
 		</dict>
 		<key>F77467CF-3A8D-44AD-BAA7-A7A2FE64F141</key>
 		<dict>
@@ -2145,12 +2117,12 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>795</real>
 		</dict>
-		<key>F833AE54-F922-42CA-AD04-57855CADA195</key>
+		<key>F982582A-8E70-4F85-B59C-3881DB55A278</key>
 		<dict>
 			<key>xpos</key>
 			<real>1050</real>
 			<key>ypos</key>
-			<real>980</real>
+			<real>1010</real>
 		</dict>
 		<key>FB70CE11-6720-4306-99E3-F55AC3A7A292</key>
 		<dict>
@@ -2299,7 +2271,7 @@ To report a problem, run `!gddiagnostic`.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2023.1</string>
+	<string>2023.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>

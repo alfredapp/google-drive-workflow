@@ -5,7 +5,9 @@ require 'json'
 require 'sqlite3'
 
 Dir_only = ARGV[0] == 'dir_only' ? 'isdir = 1 AND' : ''
-Query = ARGV[1].split(' ').map { |w| "%#{w.unicode_normalize}%" }
+Suggest_website = ARGV[1] == 'suggest_website'
+Typed_query = ARGV[2]
+Query = Typed_query.split(' ').map { |w| "%#{w.unicode_normalize}%" }
 Limit = ENV['result_limit'].to_i <= 0 ? 50 : ENV['result_limit'].to_i
 Tmp_file = File.join(ENV['alfred_workflow_cache'], 'tmp.db')
 Cache_file = File.join(ENV['alfred_workflow_cache'], 'cache.db')
@@ -16,11 +18,22 @@ unless File.exist?(Cache_file)
   require 'open3'
 
   if Open3.capture2('ps', 'A').first.split("\n").any? { |l| l.match(/ruby.*Alfred.*rebuild_cache/) }
-    puts({ items: [{ title: 'Cache is being built…', subtitle: 'Please be patient. Depending on how many files you have, it can take a while.', 'valid': false }] }.to_json)
+    puts({ items: [{
+      title: 'Cache is being built…',
+      subtitle: 'Please be patient. Depending on how many files you have, it can take a while.',
+      'valid': false
+    }] }.to_json)
+
     exit 0
   end
 
-  puts({ items: [{ title: 'Build cache', subtitle: 'It will take a few minutes to finish, depending on how many files you have.', 'arg': 'build_cache' }] }.to_json)
+  puts({ items: [{
+    variables: { build_cache: true },
+    title: 'Build cache',
+    subtitle: 'It will take a few minutes to finish, depending on how many files you have.',
+    'arg': 'build_cache'
+  }] }.to_json)
+
   exit 0
 end
 
@@ -28,22 +41,34 @@ end
 db = SQLite3::Database.new(Cache_file)
 Results = db.execute("SELECT fullpath FROM main WHERE #{Dir_only} #{Array.new(Query.length, 'basename LIKE ?').join(' AND ')} ORDER BY accesstime DESC LIMIT ?;", Query, Limit).flatten
 
-Script_filter_items = Results.each_with_object([]) { |path, array|
+Init_script_filter_items = Results.each_with_object([]) { |path, array|
   short_path = path.sub(%r{^/Users/.+?/}, '~/').sub(%r{^~/Library/CloudStorage/}, '')
+  basename = File.basename(path)
 
   array.push(
     uid: path,
     type: 'file',
-    title: File.basename(path),
+    title: basename,
     subtitle: short_path,
     icon: { path: path, type: 'fileicon' },
-    arg: path
+    arg: path,
+    mods: {
+      opt: { variables: { reveal_in_finder: true }, subtitle: 'Reveal in Finder' },
+      shift: { variables: { search_website: true }, subtitle: 'Search on Google Drive’s website', arg: basename }
+    }
   )
 }
 
-if Script_filter_items.empty?
-  puts({ items: [{ title: 'Nothing found', subtitle: 'Try searching something else' }] }.to_json)
-  exit 0
-end
+Script_filter_items = lambda {
+  return Init_script_filter_items unless Suggest_website
+
+  # Append item for website search
+  return Init_script_filter_items.push({
+    variables: { search_website: true },
+    title: "Search “#{Typed_query}” on Google Drive’s website",
+    icon: { path: 'icon.png' },
+    arg: Typed_query
+  })
+}.call
 
 puts({ items: Script_filter_items }.to_json)
