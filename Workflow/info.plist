@@ -1799,7 +1799,11 @@ fi</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>## Usage
+	<string>## Setup
+
+Set your Google Drive’s location in the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
+
+## Usage
 
 Search the contents of your Google Drive via the Search Keyword (default: `gd`) or Folder Search Keyword (default: `gdf`). [Fallback Searches](https://www.alfredapp.com/help/features/default-results/fallback-searches/) are included.
 
@@ -2182,13 +2186,13 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>/Volumes/GoogleDrive</string>
+				<string></string>
 				<key>filtermode</key>
 				<integer>1</integer>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>description</key>
 			<string>The location of Google Drive on your file system. Can take multiple paths separated by commas.</string>
@@ -2271,7 +2275,7 @@ To report a problem, run `!gddiagnostic`.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2023.2</string>
+	<string>2023.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
