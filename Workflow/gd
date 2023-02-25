@@ -28,7 +28,7 @@ unless File.exist?(Cache_file)
   end
 
   puts({ items: [{
-    variables: { build_cache: true },
+    variables: { action: 'build_cache' },
     title: 'Build cache',
     subtitle: 'It will take a few minutes to finish, depending on how many files you have.',
     'arg': 'build_cache'
@@ -53,8 +53,9 @@ Init_script_filter_items = Results.each_with_object([]) { |path, array|
     icon: { path: path, type: 'fileicon' },
     arg: path,
     mods: {
-      opt: { variables: { reveal_in_finder: true }, subtitle: 'Reveal in Finder' },
-      shift: { variables: { search_website: true }, subtitle: 'Search on Google Drive’s website', arg: basename }
+      opt: { variables: { action: 'reveal_in_finder' }, subtitle: 'Reveal in Finder' },
+      shift: { variables: { action: 'search_website' }, subtitle: 'Search on Google Drive’s website', arg: basename },
+      fn: { variables: { action: 'build_cache' }, subtitle: 'Force Cache Update' }
     }
   )
 }
@@ -64,7 +65,7 @@ Script_filter_items = lambda {
 
   # Append item for website search
   return Init_script_filter_items.push({
-    variables: { search_website: true },
+    variables: { action: 'search_website' },
     title: "Search “#{Typed_query}” on Google Drive’s website",
     icon: { path: 'icon.png' },
     arg: Typed_query

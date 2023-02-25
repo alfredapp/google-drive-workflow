@@ -4,8 +4,6 @@ List File Stream contents from Google Drive
 
 <a href='https://alfred.app/workflows/alfredapp/google-drive'>⤓ Install on the Alfred Gallery</a>
 
-> On Alfred 4 use <a href='https://github.com/alfredapp/google-drive-workflow/releases/download/2022.12/Google.Drive.alfredworkflow'>alternative link</a>
-
 ## Setup
 
 Set your Google Drive’s location in the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
@@ -18,11 +16,11 @@ Search the contents of your Google Drive via the Search Keyword (default: `gd`) 
 
 ![Alfred search for gd fran](Workflow/images/about/gdfran.png)
 
-* <kbd>⏎</kbd>: Open.
-* <kbd>⌥</kbd><kbd>⏎</kbd>: Reveal in Finder.
-* <kbd>⇧</kbd><kbd>⏎</kbd>: Search on Google Drive’s website.
+* <kbd>↩&#xFE0E;</kbd>: Open.
+* <kbd>⌥</kbd><kbd>↩&#xFE0E;</kbd>: Reveal in Finder.
+* <kbd>⇧</kbd><kbd>↩&#xFE0E;</kbd>: Search on Google Drive’s website.
 
-You’ll be asked to build the cache on your first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily and on boot. If necessary, an immediate cache rebuild can be forced with the `:gdrebuildcache` keyword.
+You’ll be asked to build the cache on your first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily. An immediate cache rebuild can be forced with <kbd>fn</kbd><kbd>↩&#xFE0E;</kbd>.
 
 The [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/) make it straightforward to copy and move files to a Google Drive folder.
 
