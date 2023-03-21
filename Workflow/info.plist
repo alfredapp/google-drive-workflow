@@ -979,21 +979,6 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1011,6 +996,21 @@ fi</string>
 			<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1794,7 +1794,7 @@ Set your Google Drive’s location in the [Workflow’s Configuration](https://w
 
 ## Usage
 
-Search the contents of your Google Drive via the Search Keyword (default: `gd`) or Folder Search Keyword (default: `gdf`). [Fallback Searches](https://www.alfredapp.com/help/features/default-results/fallback-searches/) are included.
+Search the contents of your Google Drive via the `gd` keyword. Filter for folders only with `gdf`. [Fallback Searches](https://www.alfredapp.com/help/features/default-results/fallback-searches/) are included.
 
 ![Alfred search for gd](images/about/gd.png)
 
@@ -1804,7 +1804,7 @@ Search the contents of your Google Drive via the Search Keyword (default: `gd`) 
 * &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: Reveal in Finder.
 * &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: Search on Google Drive’s website.
 
-You’ll be asked to build the cache on your first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily. An immediate cache rebuild can be forced with &lt;kbd&gt;fn&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;.
+You’ll be asked to build the cache on the first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily. An immediate cache rebuild can be forced with &lt;kbd&gt;fn&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;.
 
 The [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/) make it straightforward to copy and move files to a Google Drive folder.
 
