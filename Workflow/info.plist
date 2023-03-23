@@ -819,7 +819,6 @@ read -r -d '' plist_contents &lt;&lt;ENDPLIST
         &lt;string&gt;
           function run(argv) {
             try {
-delay(5)
               const alfred = Application(&amp;quot;com.runningwithcrayons.Alfred&amp;quot;)
               if (alfred.running()) alfred.runTrigger(argv[1], { inWorkflow: argv[0] })
             } catch {
@@ -830,7 +829,7 @@ delay(5)
           }
         &lt;/string&gt;
         &lt;string&gt;${alfred_workflow_bundleid}&lt;/string&gt;
-        &lt;string&gt;fetch_bookmarks&lt;/string&gt;
+        &lt;string&gt;rebuild_cache&lt;/string&gt;
     &lt;/array&gt;
     &lt;key&gt;StartCalendarInterval&lt;/key&gt;
     &lt;dict&gt;
