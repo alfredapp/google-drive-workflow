@@ -4,6 +4,8 @@ List File Stream contents from Google Drive
 
 [⤓ Install on the Alfred Gallery](https://alfred.app/workflows/alfredapp/google-drive)
 
+> On Alfred 4 use <a href='https://github.com/alfredapp/google-drive-workflow/releases/download/2022.12/Google.Drive.alfredworkflow'>alternative link</a>
+
 ## Setup
 
 Set your Google Drive’s location in the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
