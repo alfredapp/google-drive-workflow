@@ -1579,13 +1579,18 @@ fi
 echo
 echo '### Google drive path'
 
-if [[ -d "${google_drive_path}" ]]; then
-  echo "Exists: ${google_drive_path}"
-  find "${google_drive_path}" | wc -l | tr -d ' \n'
-  echo ' paths'
-else
-  echo "Does NOT Exist: ${google_drive_path}"
-fi
+for drive_path in "${(s:,:)google_drive_path}"; do
+  trimmed_path="$(sed 's/^ *//;s/ *$//' &lt;&lt;&lt; "${drive_path}")"
+  expanded_path="${trimmed_path/#\~/${HOME}}"
+
+  if [[ -d "${expanded_path}" ]]; then
+    echo "Exists: ${expanded_path}"
+    find "${expanded_path}" | wc -l | tr -d ' \n'
+    echo ' paths'
+  else
+    echo "Does NOT Exist: ${expanded_path}"
+  fi
+done
 
 echo
 echo '### Cache dir'
