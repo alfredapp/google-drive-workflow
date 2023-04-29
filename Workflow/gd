@@ -55,7 +55,7 @@ Init_script_filter_items = Results.each_with_object([]) { |path, array|
     mods: {
       opt: { variables: { action: 'reveal_in_finder' }, subtitle: 'Reveal in Finder' },
       shift: { variables: { action: 'search_website' }, subtitle: 'Search on Google Drive’s website', arg: basename },
-      fn: { variables: { action: 'build_cache' }, subtitle: 'Force Cache Update' }
+      'cmd+alt+ctrl': { variables: { action: 'build_cache' }, subtitle: 'Force Cache Update' }
     }
   )
 }
