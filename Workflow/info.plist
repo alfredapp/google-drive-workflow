@@ -704,7 +704,7 @@
 				<key>title</key>
 				<string>Search Google Drive</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>11</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -867,7 +867,7 @@ fi</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -914,7 +914,7 @@ fi</string>
 				<key>title</key>
 				<string>Search Google Drive Folders</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>11</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1308,7 +1308,7 @@ fi</string>
 				<key>title</key>
 				<string>Search Google Drive Folders</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>11</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -1650,7 +1650,7 @@ fi</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>11</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
