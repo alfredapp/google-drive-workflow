@@ -1332,7 +1332,7 @@ fi</string>
 						<key>matchmode</key>
 						<integer>5</integer>
 						<key>matchstring</key>
-						<string>build_cache</string>
+						<string></string>
 						<key>outputlabel</key>
 						<string>Build cache</string>
 						<key>uid</key>
@@ -2181,30 +2181,25 @@ To report a problem, run `!gddiagnostic`.</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>default</key>
-				<string>20</string>
-				<key>pairs</key>
-				<array>
-					<array>
-						<string>20</string>
-						<string>20</string>
-					</array>
-					<array>
-						<string>50</string>
-						<string>50</string>
-					</array>
-					<array>
-						<string>100</string>
-						<string>100</string>
-					</array>
-				</array>
+				<key>defaultvalue</key>
+				<integer>20</integer>
+				<key>markercount</key>
+				<integer>20</integer>
+				<key>maxvalue</key>
+				<integer>200</integer>
+				<key>minvalue</key>
+				<integer>10</integer>
+				<key>onlystoponmarkers</key>
+				<true/>
+				<key>showmarkers</key>
+				<true/>
 			</dict>
 			<key>description</key>
 			<string>Select more results for more flexibility or fewer results for higher performance.</string>
 			<key>label</key>
 			<string>Result Limit</string>
 			<key>type</key>
-			<string>popupbutton</string>
+			<string>slider</string>
 			<key>variable</key>
 			<string>result_limit</string>
 		</dict>
