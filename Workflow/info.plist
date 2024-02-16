@@ -699,6 +699,8 @@
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string>gd</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Files and folders</string>
 				<key>title</key>
@@ -909,6 +911,8 @@ fi</string>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string>gd</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Folders only</string>
 				<key>title</key>
@@ -1303,6 +1307,8 @@ fi</string>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string>gd</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Will {var:action} path to selected location</string>
 				<key>title</key>
@@ -1723,6 +1729,8 @@ fi</string>
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>!gddiagnostic</string>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Result will be copied to the clipboard</string>
 				<key>text</key>
@@ -1804,9 +1812,9 @@ Search the contents of your Google Drive via the `gd` keyword. Filter for folder
 
 ![Alfred search for gd fran](images/about/gdfran.png)
 
-* &lt;kbd&gt;↩&lt;/kbd&gt;: Open.
-* &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: Reveal in Finder.
-* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;: Search on Google Drive’s website.
+* &lt;kbd&gt;↩&lt;/kbd&gt; Open.
+* &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Reveal in Finder.
+* &lt;kbd&gt;⇧&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt; Search on Google Drive’s website.
 
 You’ll be asked to build the cache on the first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily. An immediate cache rebuild can be forced with &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;↩&lt;/kbd&gt;.
 
