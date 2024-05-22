@@ -206,6 +206,20 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+				<key>disabled</key>
+				<true/>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>5D3BF045-A3D3-407F-AF82-EB3D457BD98E</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8C82E75C-DEBE-49CF-A292-228138BCE24F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -327,6 +341,18 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+				<key>disabled</key>
+				<true/>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8C82E75C-DEBE-49CF-A292-228138BCE24F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -359,6 +385,19 @@
 				<string></string>
 				<key>vitoclose</key>
 				<true/>
+			</dict>
+		</array>
+		<key>8C82E75C-DEBE-49CF-A292-228138BCE24F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>24E99691-8B40-4D5E-9803-AC2BDDEDCD32</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>AE4BF001-D444-4CB2-A5F3-9585CD7292B8</key>
@@ -982,6 +1021,21 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -999,21 +1053,6 @@ fi</string>
 			<string>58E78B44-F5EC-4DA1-B098-1412774CC752</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>CFAA5E53-D43E-4486-AE98-3A8309CE52C8</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1208,6 +1247,48 @@ fi</string>
 			<string>BD0D1F9A-0869-4EB7-AB10-AF04477C97CA</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>function envVar(varName) {
+  return $.NSProcessInfo
+    .processInfo
+    .environment
+    .objectForKey(varName).js
+}
+
+function writeSTDOUT(string) {
+  const nsdata = $(string).dataUsingEncoding($.NSUTF8StringEncoding)
+  $.NSFileHandle.fileHandleWithStandardOutput.writeData(nsdata)
+}
+
+function run(argv) {
+  const dirsVarName = "google_drive_path"
+
+  const newDirs = envVar(dirsVarName).split(",").map(e =&gt; e.trim()).join(" : ")
+  Application("com.runningwithcrayons.alfred").setConfiguration(
+    dirsVarName, { toValue: newDirs, inWorkflow: envVar("alfred_workflow_bundleid") })
+  return JSON.stringify({ alfredworkflow: { variables: { google_drive_path: newDirs }}})
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8C82E75C-DEBE-49CF-A292-228138BCE24F</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1990,6 +2071,15 @@ To report a problem, run `!gddiagnostic`.</string>
 			<key>ypos</key>
 			<real>890</real>
 		</dict>
+		<key>8C82E75C-DEBE-49CF-A292-228138BCE24F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<real>475</real>
+			<key>ypos</key>
+			<real>770</real>
+		</dict>
 		<key>AE4BF001-D444-4CB2-A5F3-9585CD7292B8</key>
 		<dict>
 			<key>xpos</key>
@@ -2178,7 +2268,8 @@ To report a problem, run `!gddiagnostic`.</string>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>The location of Google Drive on your file system. Can take multiple paths separated by commas.</string>
+			<string>The location of Google Drive on your file system.
+Can take multiple paths separated by colons.</string>
 			<key>label</key>
 			<string>Google Drive Path</string>
 			<key>type</key>
