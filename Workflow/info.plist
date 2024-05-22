@@ -2344,7 +2344,7 @@ Can take multiple paths separated by colons.</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2023.8</string>
+	<string>2024.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/alfredapp/google-drive-workflow/</string>
 </dict>
