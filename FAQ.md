@@ -10,7 +10,7 @@ Yes. Some people still prefer it for its granularity and features.
 
 ### How do I report an issue?
 
-Accurate and thorough information is crucial for a proper diagnosis. When reporting issues, please include the output of running `!gddiagnostic` in Alfred, in addition to:
+Accurate and thorough information is crucial for a proper diagnosis. **At a minimum, your report should include:**
 
-* The [debugger](https://www.alfredapp.com/help/workflows/advanced/debugger/) output. Perform the failing action and click *Copy* on the top right.
-* Details on what you did, what happened, and what you expected to happen. A short video of the steps with the debugger open may help to find the problem faster.
+* The output of running `!gddiagnostic`.
+* The [debugger](https://www.alfredapp.com/help/workflows/advanced/debugger/) output of the failing action.
