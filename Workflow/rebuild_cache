@@ -33,6 +33,7 @@ end
 Tmp_file.delete if Tmp_file.exist? # Cleanup aborted cache rebuilds
 
 db = SQLite3::Database.new(Tmp_file.to_path)
+db.transaction
 db.execute('CREATE TABLE main (fullpath TEXT, basename TINYTEXT, isdir BOOLEAN, accesstime INTEGER);')
 
 Gdrive_paths.each do |gdrive_path|
@@ -53,5 +54,7 @@ Gdrive_paths.each do |gdrive_path|
     db.execute('INSERT INTO main (fullpath, basename, isdir, accesstime) VALUES (?, ?, ?, ?);', [fullpath, basename, isdir, accesstime])
   end
 end
+
+db.commit
 
 Tmp_file.rename(Cache_file)
