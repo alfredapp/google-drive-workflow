@@ -1820,7 +1820,7 @@ You’ll be asked to build the cache on the first run. A notification will show 
 
 The [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/) make it straightforward to copy and move files to a Google Drive folder.
 
-![File Actions for Google Drive copy and mode](images/about/fileaction.png)
+![File Actions for Google Drive copy and move](images/about/fileaction.png)
 
 To report a problem, run `!gddiagnostic`.</string>
 	<key>uidata</key>
