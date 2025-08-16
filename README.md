@@ -16,14 +16,14 @@ Search the contents of your Google Drive via the `gd` keyword. Filter for folder
 
 ![Alfred search for gd fran](Workflow/images/about/gdfran.png)
 
-* <kbd>↩&#xFE0E;</kbd> Open.
-* <kbd>⌥</kbd><kbd>↩&#xFE0E;</kbd> Reveal in Finder.
-* <kbd>⇧</kbd><kbd>↩&#xFE0E;</kbd> Search on Google Drive’s website.
+* <kbd>↩</kbd> Open.
+* <kbd>⌥</kbd><kbd>↩</kbd> Reveal in Finder.
+* <kbd>⇧</kbd><kbd>↩</kbd> Search on Google Drive’s website.
 
-You’ll be asked to build the cache on the first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily. An immediate cache rebuild can be forced with <kbd>⌘</kbd><kbd>⌥</kbd><kbd>⌃</kbd><kbd>↩&#xFE0E;</kbd>.
+You’ll be asked to build the cache on the first run. A notification will show when it’s ready. The more files you have, the longer the wait. A macOS launchd agent will be loaded to do it daily. An immediate cache rebuild can be forced with <kbd>⌘</kbd><kbd>⌥</kbd><kbd>⌃</kbd><kbd>↩</kbd>.
 
 The [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/) make it straightforward to copy and move files to a Google Drive folder.
 
-![File Actions for Google Drive copy and mode](Workflow/images/about/fileaction.png)
+![File Actions for Google Drive copy and move](Workflow/images/about/fileaction.png)
 
 To report a problem, run `!gddiagnostic`.
