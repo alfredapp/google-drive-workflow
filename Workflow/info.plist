@@ -1728,7 +1728,7 @@ fi</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>!gddiagnostic</string>
+				<string>:gddiagnostic</string>
 				<key>skipuniversalaction</key>
 				<true/>
 				<key>subtext</key>
@@ -1822,7 +1822,7 @@ The [Universal Actions](https://www.alfredapp.com/help/features/universal-action
 
 ![File Actions for Google Drive copy and move](images/about/fileaction.png)
 
-To report a problem, run `!gddiagnostic`.</string>
+To report a problem, run `:gddiagnostic`.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0364D5B3-0C34-4B98-93E5-9A1A625A84C3</key>

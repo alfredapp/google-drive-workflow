@@ -12,5 +12,5 @@ Yes. Some people still prefer it for its granularity and features.
 
 Accurate and thorough information is crucial for a proper diagnosis. **At a minimum, your report should include:**
 
-* The output of running `!gddiagnostic`.
+* The output of running `:gddiagnostic`.
 * The [debugger](https://www.alfredapp.com/help/workflows/advanced/debugger/) output of the failing action.
